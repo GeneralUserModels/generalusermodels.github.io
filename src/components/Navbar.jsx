@@ -3,12 +3,12 @@ import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = ({ activeChats }) => {
   const location = useLocation();
-  const [sidebarWidth, setSidebarWidth] = useState(300); // Default width
+  const [sidebarWidth, setSidebarWidth] = useState(250); // Default width
 
   // Handle drag to resize
   const handleMouseMove = (e) => {
-    const newWidth = e.clientX < 180 ? 180 : e.clientX; // min 180px
-    setSidebarWidth(newWidth);
+    // const newWidth = e.clientX < 180 ? 180 : e.clientX; // min 180px
+    // setSidebarWidth(newWidth);
   };
 
   const handleMouseUp = () => {
