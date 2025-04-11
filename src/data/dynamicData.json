@@ -1,0 +1,1602 @@
+{
+    "9": {
+      "activity": "Reviewing emails and setting daily priorities",
+      "carousel": [
+        [
+          { "id": 1, "text": "User uses Bloomberg Terminal daily", "value": "0.8" },
+          { "id": 2, "text": "User leverages Reuters for headlines", "value": "0.9" },
+          { "id": 3, "text": "User reads WSJ in the morning", "value": "0.8" },
+          { "id": 4, "text": "User scans CNBC for pre-market trends", "value": "0.9" },
+          { "id": 5, "text": "User studies FT economic forecasts", "value": "0.9" }
+        ],
+        [
+          { "id": 6, "text": "User checks market emails promptly", "value": "0.8" },
+          { "id": 7, "text": "User sorts overnight messages", "value": "0.8" },
+          { "id": 8, "text": "User flags urgent emails", "value": "0.8" },
+          { "id": 9, "text": "User drafts morning replies", "value": "0.8" },
+          { "id": 10, "text": "User reviews team updates", "value": "0.8" }
+        ],
+        [
+          { "id": 11, "text": "User plans day with calendar apps", "value": "0.8" },
+          { "id": 12, "text": "User organizes tasks in Notion", "value": "0.9" },
+          { "id": 13, "text": "User sets priorities for the day", "value": "0.8" },
+          { "id": 14, "text": "User updates to-do lists online", "value": "0.9" },
+          { "id": 15, "text": "User reviews morning analytics", "value": "0.8" }
+        ]
+      ],
+      "suggestions": [
+        {
+          "id": 1,
+          "title": "Define Daily Goals",
+          "description": "Outline top priorities and tasks for a productive day.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "I recommend starting your day by defining clear goals. Consider drafting a priority list."
+            },
+            {
+              "role": "user",
+              "message": "What should I include in the list?"
+            },
+            {
+              "role": "assistant",
+              "message": "Include urgent tasks, scheduled meetings, and personal targets for a balanced plan."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Process Overnight Emails",
+          "description": "Sort and flag important messages received overnight.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Your inbox is busy; filtering overnight emails can help you focus."
+            },
+            {
+              "role": "user",
+              "message": "How should I prioritize them?"
+            },
+            {
+              "role": "assistant",
+              "message": "Sort by sender importance and flag those with urgent subjects."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Review Market Reports",
+          "description": "Analyze key market updates and economic data to inform decisions.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Reviewing market reports can provide valuable insights for your day."
+            },
+            {
+              "role": "user",
+              "message": "Which reports are most critical?"
+            },
+            {
+              "role": "assistant",
+              "message": "Focus on economic forecasts and industry trend summaries."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Plan Morning Sync",
+          "description": "Schedule a brief meeting to align with your team for the day.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "A quick sync can help coordinate your team's daily priorities."
+            },
+            {
+              "role": "user",
+              "message": "What topics should we cover?"
+            },
+            {
+              "role": "assistant",
+              "message": "Discuss progress, challenges, and set immediate action items."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Draft Daily Briefing",
+          "description": "Prepare a concise summary of the day's planned activities.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Drafting a daily briefing can help structure your workflow efficiently."
+            },
+            {
+              "role": "user",
+              "message": "What should the briefing include?"
+            },
+            {
+              "role": "assistant",
+              "message": "Include key tasks, meetings, and critical updates for your schedule."
+            }
+          ]
+        }
+      ]
+    },
+    "10": {
+      "activity": "Analyzing market data and preparing analytical reports",
+      "carousel": [
+        [
+          { "id": 16, "text": "User uses Tableau for market data", "value": "0.9" },
+          { "id": 17, "text": "User reviews trading charts on TV", "value": "0.8" },
+          { "id": 18, "text": "User leverages Excel for trend analysis", "value": "0.8" },
+          { "id": 19, "text": "User studies WSJ economic insights", "value": "0.8" },
+          { "id": 20, "text": "User monitors Reuters live feeds", "value": "0.9" }
+        ],
+        [
+          { "id": 21, "text": "User crunches numbers with Python", "value": "0.8" },
+          { "id": 22, "text": "User examines stock indices with R", "value": "0.8" },
+          { "id": 23, "text": "User updates data dashboards promptly", "value": "0.8" },
+          { "id": 24, "text": "User organizes reports in Sheets", "value": "0.8" },
+          { "id": 25, "text": "User refines models using MATLAB", "value": "0.8" }
+        ],
+        [
+          { "id": 26, "text": "User integrates APIs for data feeds", "value": "0.8" },
+          { "id": 27, "text": "User configures alerts via Slack", "value": "0.8" },
+          { "id": 28, "text": "User cross-checks on Bloomberg", "value": "0.8" },
+          { "id": 29, "text": "User tracks volatility metrics", "value": "0.8" },
+          { "id": 30, "text": "User validates data with Notion", "value": "0.9" }
+        ]
+      ],
+      "suggestions": [
+        {
+          "id": 6,
+          "title": "Refresh Market Dashboard",
+          "description": "Integrate live data feeds into your dashboard for real-time insights.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Consider refreshing your dashboard with real-time data integration."
+            },
+            {
+              "role": "user",
+              "message": "How can I update my dashboard effectively?"
+            },
+            {
+              "role": "assistant",
+              "message": "Integrate live feeds and add dynamic charts for seamless updates."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Update Trend Analysis",
+          "description": "Review recent stock trends and update your analytical reports accordingly.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Updating trend analysis will give you a clearer picture of market shifts."
+            },
+            {
+              "role": "user",
+              "message": "Which trends should I focus on?"
+            },
+            {
+              "role": "assistant",
+              "message": "Look at volatility, volume, and key index movements."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Study Competitor Moves",
+          "description": "Analyze competitor performance and extract actionable insights for your strategy.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Competitor analysis could reveal key strategic shifts."
+            },
+            {
+              "role": "user",
+              "message": "How do I approach this comparison?"
+            },
+            {
+              "role": "assistant",
+              "message": "Evaluate competitors' financials and market positioning."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Prepare Client Briefing",
+          "description": "Draft key points for upcoming client discussions with detailed market insights.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "A well-prepared briefing can boost client confidence."
+            },
+            {
+              "role": "user",
+              "message": "What details should I include?"
+            },
+            {
+              "role": "assistant",
+              "message": "Include recent data, competitive insights, and strategic recommendations."
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "title": "Optimize Data Tools",
+          "description": "Ensure your analytical tools are calibrated for accuracy and efficiency.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Optimizing your tools will lead to more reliable analysis."
+            },
+            {
+              "role": "user",
+              "message": "Which tools need updating?"
+            },
+            {
+              "role": "assistant",
+              "message": "Review integrations and update any outdated modules."
+            }
+          ]
+        }
+      ]
+    },
+    "11": {
+      "activity": "Conducting deep analysis on client portfolios and strategies",
+      "carousel": [
+        [
+          { "id": 31, "text": "User writes Python scripts for risk", "value": "0.8" },
+          { "id": 32, "text": "User reviews portfolios on Morningstar", "value": "0.9" },
+          { "id": 33, "text": "User analyzes earnings on Zacks", "value": "0.8" },
+          { "id": 34, "text": "User studies Bloomberg for insights", "value": "0.8" },
+          { "id": 35, "text": "User inspects trends on Reuters", "value": "0.8" }
+        ],
+        [
+          { "id": 36, "text": "User evaluates investments in Excel", "value": "0.8" },
+          { "id": 37, "text": "User uses R for quantitative tests", "value": "0.8" },
+          { "id": 38, "text": "User monitors shifts on WSJ", "value": "0.8" },
+          { "id": 39, "text": "User checks sentiment on CNBC", "value": "0.8" },
+          { "id": 40, "text": "User cross-checks data in Notion", "value": "0.8" }
+        ],
+        [
+          { "id": 41, "text": "User models risks using MATLAB", "value": "0.8" },
+          { "id": 42, "text": "User refines strategy with SAS", "value": "0.8" },
+          { "id": 43, "text": "User benchmarks on FT reports", "value": "0.8" },
+          { "id": 44, "text": "User consolidates data in Notion", "value": "0.8" },
+          { "id": 45, "text": "User reviews feedback on Slack", "value": "0.8" }
+        ]
+      ],
+      "suggestions": [
+        {
+          "id": 11,
+          "title": "Assess Portfolio Health",
+          "description": "Review client portfolios thoroughly to gauge performance and risks.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Assessing portfolio health can uncover hidden opportunities."
+            },
+            {
+              "role": "user",
+              "message": "Which metrics should I focus on?"
+            },
+            {
+              "role": "assistant",
+              "message": "Look at growth rates, asset distribution, and market conditions."
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "title": "Run Risk Models",
+          "description": "Leverage advanced risk models to identify potential investment pitfalls.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Risk modeling is crucial to preempt market challenges."
+            },
+            {
+              "role": "user",
+              "message": "How do I interpret these models?"
+            },
+            {
+              "role": "assistant",
+              "message": "Focus on volatility indices and stress-test outcomes."
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "title": "Refine Investment Plan",
+          "description": "Adjust your investment strategy based on the latest market data.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Refining your plan can enhance portfolio performance."
+            },
+            {
+              "role": "user",
+              "message": "What adjustments do you suggest?"
+            },
+            {
+              "role": "assistant",
+              "message": "Consider rebalancing assets and updating risk assessments."
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "title": "Schedule Client Review",
+          "description": "Plan follow-up meetings with clients to discuss portfolio performance.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Regular reviews build strong client relationships."
+            },
+            {
+              "role": "user",
+              "message": "How often should I schedule these reviews?"
+            },
+            {
+              "role": "assistant",
+              "message": "A monthly review is ideal for consistent updates."
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "title": "Merge Data Sources",
+          "description": "Combine internal analytics with external market data for comprehensive insights.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Merging data can lead to deeper, actionable insights."
+            },
+            {
+              "role": "user",
+              "message": "What integration tools work best?"
+            },
+            {
+              "role": "assistant",
+              "message": "Use platforms that support multi-source dashboards."
+            }
+          ]
+        }
+      ]
+    },
+    "12": {
+      "activity": "Conducting a midday review and preparing for lunch discussions",
+      "carousel": [
+        [
+          { "id": 46, "text": "User cross-checks trends on Reuters", "value": "0.8" },
+          { "id": 47, "text": "User analyzes midday data on WSJ", "value": "0.8" },
+          { "id": 48, "text": "User visualizes metrics with Tableau", "value": "0.9" },
+          { "id": 49, "text": "User monitors KPIs via dashboards", "value": "0.8" },
+          { "id": 50, "text": "User reviews performance in Excel", "value": "0.8" }
+        ],
+        [
+          { "id": 51, "text": "User consolidates data in Notion", "value": "0.8" },
+          { "id": 52, "text": "User streamlines tasks with Trello", "value": "0.8" },
+          { "id": 53, "text": "User drafts summaries in Word", "value": "0.8" },
+          { "id": 54, "text": "User compares stats in Sheets", "value": "0.8" },
+          { "id": 55, "text": "User organizes notes digitally", "value": "0.9" }
+        ],
+        [
+          { "id": 56, "text": "User tracks analytics with PowerBI", "value": "0.8" },
+          { "id": 57, "text": "User updates reports in Slack", "value": "0.8" },
+          { "id": 58, "text": "User fine-tunes project data", "value": "0.8" },
+          { "id": 59, "text": "User reviews progress on Asana", "value": "0.9" },
+          { "id": 60, "text": "User logs daily updates online", "value": "0.8" }
+        ]
+      ],
+      "suggestions": [
+        {
+          "id": 16,
+          "title": "Plan Lunch Meeting",
+          "description": "Prepare talking points and an agenda for your midday meeting.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Planning a concise lunch meeting can align your team."
+            },
+            {
+              "role": "user",
+              "message": "What should the agenda cover?"
+            },
+            {
+              "role": "assistant",
+              "message": "Include key updates, challenges, and immediate goals."
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "title": "Summarize Morning Trends",
+          "description": "Consolidate critical insights from the morning into a summary.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Summarizing trends clarifies next steps."
+            },
+            {
+              "role": "user",
+              "message": "Which trends are most crucial?"
+            },
+            {
+              "role": "assistant",
+              "message": "Focus on market shifts and team progress."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "title": "Assess Performance Metrics",
+          "description": "Review performance indicators to measure current progress.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Metrics give a snapshot of your progress."
+            },
+            {
+              "role": "user",
+              "message": "Where can I see these metrics?"
+            },
+            {
+              "role": "assistant",
+              "message": "Check your dashboard and recent report summaries."
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "title": "Streamline Workflow",
+          "description": "Identify workflow bottlenecks and improve daily processes.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Streamlining your workflow boosts efficiency."
+            },
+            {
+              "role": "user",
+              "message": "How do I spot these bottlenecks?"
+            },
+            {
+              "role": "assistant",
+              "message": "Review recurring issues in your task management tools."
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "title": "Adjust Strategies",
+          "description": "Refine tactics based on the latest data and feedback.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Adjusting strategy is key for sustained success."
+            },
+            {
+              "role": "user",
+              "message": "What adjustments do you recommend?"
+            },
+            {
+              "role": "assistant",
+              "message": "Incorporate recent trends and team input into your plan."
+            }
+          ]
+        }
+      ]
+    },
+    "13": {
+      "activity": "Attending virtual meetings and collaborating with team members",
+      "carousel": [
+        [
+          { "id": 61, "text": "User connects via Zoom for meetings", "value": "0.9" },
+          { "id": 62, "text": "User shares slides on PowerPoint", "value": "0.8" },
+          { "id": 63, "text": "User collaborates in Teams actively", "value": "0.8" },
+          { "id": 64, "text": "User reviews docs on Drive", "value": "0.8" },
+          { "id": 65, "text": "User accesses files on Slack", "value": "0.8" }
+        ],
+        [
+          { "id": 66, "text": "User updates tasks in Asana", "value": "0.8" },
+          { "id": 67, "text": "User manages calendar in Outlook", "value": "0.9" },
+          { "id": 68, "text": "User coordinates via email threads", "value": "0.8" },
+          { "id": 69, "text": "User brainstorms on whiteboards", "value": "0.8" },
+          { "id": 70, "text": "User uploads files to Dropbox", "value": "0.8" }
+        ],
+        [
+          { "id": 71, "text": "User revisits meeting minutes", "value": "0.8" },
+          { "id": 72, "text": "User tracks action items on Trello", "value": "0.8" },
+          { "id": 73, "text": "User reviews team KPIs online", "value": "0.8" },
+          { "id": 74, "text": "User checks project timelines", "value": "0.8" },
+          { "id": 75, "text": "User logs meeting takeaways", "value": "0.8" }
+        ]
+      ],
+      "suggestions": [
+        {
+          "id": 21,
+          "title": "Join Team Meeting",
+          "description": "Engage in the virtual meeting to align on projects and tasks.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Joining the team call ensures everyone is on the same page."
+            },
+            {
+              "role": "user",
+              "message": "What should I prepare before joining?"
+            },
+            {
+              "role": "assistant",
+              "message": "Review recent project updates and your key action items."
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "title": "Document Meeting Notes",
+          "description": "Record key points and actions during the meeting for future reference.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Documenting meeting notes is essential for follow-up."
+            },
+            {
+              "role": "user",
+              "message": "How can I organize them effectively?"
+            },
+            {
+              "role": "assistant",
+              "message": "Use a shared digital notebook to keep notes structured and accessible."
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "title": "Share Collaborative Files",
+          "description": "Ensure all team members have access to necessary resources.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Sharing files keeps the team informed."
+            },
+            {
+              "role": "user",
+              "message": "What file format works best?"
+            },
+            {
+              "role": "assistant",
+              "message": "Cloud storage services allow for various formats and easy sharing."
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "title": "Gather Team Feedback",
+          "description": "Collect input during the meeting to improve workflow and strategy.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Team feedback can drive process improvements."
+            },
+            {
+              "role": "user",
+              "message": "What’s an effective way to gather it?"
+            },
+            {
+              "role": "assistant",
+              "message": "Use quick polls or direct questioning during the meeting."
+            }
+          ]
+        },
+        {
+          "id": 25,
+          "title": "Define Follow-Up Tasks",
+          "description": "Outline actionable steps and assign responsibilities post-meeting.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Clear follow-up tasks ensure project momentum."
+            },
+            {
+              "role": "user",
+              "message": "What should I include in the task list?"
+            },
+            {
+              "role": "assistant",
+              "message": "List deadlines, responsibilities, and next review dates."
+            }
+          ]
+        }
+      ]
+    },
+    "14": {
+      "activity": "Working on detailed project analysis and report preparation",
+      "carousel": [
+        [
+          { "id": 76, "text": "User uses Power BI for visuals", "value": "0.9" },
+          { "id": 77, "text": "User analyzes trends on RStudio", "value": "0.8" },
+          { "id": 78, "text": "User benchmarks via Salesforce", "value": "0.8" },
+          { "id": 79, "text": "User checks metrics on Google Analytics", "value": "0.8" },
+          { "id": 80, "text": "User refines forecasts using Excel", "value": "0.9" }
+        ],
+        [
+          { "id": 81, "text": "User creates charts in Tableau", "value": "0.8" },
+          { "id": 82, "text": "User models data with Python", "value": "0.8" },
+          { "id": 83, "text": "User reviews reports on FT", "value": "0.8" },
+          { "id": 84, "text": "User monitors trends on WSJ", "value": "0.8" },
+          { "id": 85, "text": "User consolidates data in Notion", "value": "0.8" }
+        ],
+        [
+          { "id": 86, "text": "User explores insights on Bloomberg", "value": "0.8" },
+          { "id": 87, "text": "User validates figures with MATLAB", "value": "0.8" },
+          { "id": 88, "text": "User uses SAS for stats analysis", "value": "0.8" },
+          { "id": 89, "text": "User refines analysis in SPSS", "value": "0.8" },
+          { "id": 90, "text": "User reviews model outputs online", "value": "0.8" }
+        ]
+      ],
+      "suggestions": [
+        {
+          "id": 26,
+          "title": "Draft Project Report",
+          "description": "Begin drafting a comprehensive report detailing project progress and insights.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Drafting your report will organize your analysis effectively."
+            },
+            {
+              "role": "user",
+              "message": "What key points should I include?"
+            },
+            {
+              "role": "assistant",
+              "message": "Include data trends, client insights, and actionable recommendations."
+            }
+          ]
+        },
+        {
+          "id": 27,
+          "title": "Monitor Key Metrics",
+          "description": "Regularly review performance indicators to gauge project success.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Key metrics provide a clear picture of project health."
+            },
+            {
+              "role": "user",
+              "message": "Which metrics are most vital?"
+            },
+            {
+              "role": "assistant",
+              "message": "Focus on growth, engagement, and ROI figures."
+            }
+          ]
+        },
+        {
+          "id": 28,
+          "title": "Create Data Visuals",
+          "description": "Design engaging charts and graphs to represent your findings effectively.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Visuals simplify complex data for stakeholders."
+            },
+            {
+              "role": "user",
+              "message": "Which visuals work best?"
+            },
+            {
+              "role": "assistant",
+              "message": "Bar charts, line graphs, and scatter plots are very effective."
+            }
+          ]
+        },
+        {
+          "id": 29,
+          "title": "Benchmark Against Competitors",
+          "description": "Compare your project metrics against industry standards to find improvement areas.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Benchmarking helps you understand your market position."
+            },
+            {
+              "role": "user",
+              "message": "What data should I compare?"
+            },
+            {
+              "role": "assistant",
+              "message": "Compare market share, growth rates, and customer feedback."
+            }
+          ]
+        },
+        {
+          "id": 30,
+          "title": "Discuss Findings",
+          "description": "Share your analysis with your team for feedback and further strategy refinement.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Discussing your findings can lead to innovative strategies."
+            },
+            {
+              "role": "user",
+              "message": "How should I present the data?"
+            },
+            {
+              "role": "assistant",
+              "message": "Prepare a summary with interactive visuals for the discussion."
+            }
+          ]
+        }
+      ]
+    },
+    "15": {
+      "activity": "Finalizing documents and strategizing for client work",
+      "carousel": [
+        [
+          { "id": 91, "text": "User refines decks on PowerPoint", "value": "0.9" },
+          { "id": 92, "text": "User edits reports in Word", "value": "0.8" },
+          { "id": 93, "text": "User organizes tasks on Trello", "value": "0.8" },
+          { "id": 94, "text": "User reviews data on Sheets", "value": "0.8" },
+          { "id": 95, "text": "User updates figures in Excel", "value": "0.8" }
+        ],
+        [
+          { "id": 96, "text": "User drafts outlines on Notion", "value": "0.8" },
+          { "id": 97, "text": "User checks emails on Outlook", "value": "0.8" },
+          { "id": 98, "text": "User summarizes in OneNote", "value": "0.8" },
+          { "id": 99, "text": "User archives files in Drive", "value": "0.8" },
+          { "id": 100, "text": "User cross-checks stats in CRM", "value": "0.9" }
+        ],
+        [
+          { "id": 101, "text": "User analyzes feedback on Slack", "value": "0.8" },
+          { "id": 102, "text": "User reviews meeting notes", "value": "0.8" },
+          { "id": 103, "text": "User updates project timelines", "value": "0.8" },
+          { "id": 104, "text": "User consolidates key metrics", "value": "0.8" },
+          { "id": 105, "text": "User reviews strategic summaries", "value": "0.8" }
+        ]
+      ],
+      "suggestions": [
+        {
+          "id": 31,
+          "title": "Polish Presentation Deck",
+          "description": "Refine your client presentation deck with updated visuals and data.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Enhancing your deck can create a strong impression."
+            },
+            {
+              "role": "user",
+              "message": "Which updates should I focus on?"
+            },
+            {
+              "role": "assistant",
+              "message": "Update visuals, streamline data, and highlight key messages."
+            }
+          ]
+        },
+        {
+          "id": 32,
+          "title": "Review Remaining Tasks",
+          "description": "Ensure all pending tasks are completed and documented.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Reviewing tasks ensures nothing critical is overlooked."
+            },
+            {
+              "role": "user",
+              "message": "How can I be sure nothing is missed?"
+            },
+            {
+              "role": "assistant",
+              "message": "Cross-check task lists across your project tools."
+            }
+          ]
+        },
+        {
+          "id": 33,
+          "title": "Update Strategic Plans",
+          "description": "Revise your strategy based on the day's insights and data.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Updating your strategy can keep you agile."
+            },
+            {
+              "role": "user",
+              "message": "What aspects need revisiting?"
+            },
+            {
+              "role": "assistant",
+              "message": "Incorporate recent data trends and client feedback."
+            }
+          ]
+        },
+        {
+          "id": 34,
+          "title": "Summarize Key Findings",
+          "description": "Prepare a concise summary of the day's insights and outcomes.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "A summary consolidates your day's accomplishments."
+            },
+            {
+              "role": "user",
+              "message": "Which details are most important?"
+            },
+            {
+              "role": "assistant",
+              "message": "Highlight main achievements, challenges, and data insights."
+            }
+          ]
+        },
+        {
+          "id": 35,
+          "title": "Gather Team Input",
+          "description": "Collect feedback from your team to refine upcoming actions.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Team input is invaluable for strategy refinement."
+            },
+            {
+              "role": "user",
+              "message": "How should I collect effective feedback?"
+            },
+            {
+              "role": "assistant",
+              "message": "Use a quick survey or a focused discussion during a meeting."
+            }
+          ]
+        }
+      ]
+    },
+    "16": {
+      "activity": "Wrapping up work and consolidating reports for the day",
+      "carousel": [
+        [
+          { "id": 106, "text": "User logs work on Google Sheets", "value": "0.8" },
+          { "id": 107, "text": "User reviews performance on Salesforce", "value": "0.8" },
+          { "id": 108, "text": "User organizes tasks on Asana", "value": "0.8" },
+          { "id": 109, "text": "User syncs emails via Outlook", "value": "0.8" },
+          { "id": 110, "text": "User finalizes reports on Slack", "value": "0.8" }
+        ],
+        [
+          { "id": 111, "text": "User archives data in Drive", "value": "0.8" },
+          { "id": 112, "text": "User consolidates info in Notion", "value": "0.8" },
+          { "id": 113, "text": "User checks progress on Jira", "value": "0.8" },
+          { "id": 114, "text": "User reviews KPIs on Tableau", "value": "0.8" },
+          { "id": 115, "text": "User updates project logs online", "value": "0.8" }
+        ],
+        [
+          { "id": 116, "text": "User summarizes daily achievements", "value": "0.8" },
+          { "id": 117, "text": "User documents workflow in Confluence", "value": "0.8" },
+          { "id": 118, "text": "User reviews feedback on CRM", "value": "0.8" },
+          { "id": 119, "text": "User schedules reminders in Outlook", "value": "0.8" },
+          { "id": 120, "text": "User cross-checks updates with team", "value": "0.8" }
+        ]
+      ],
+      "suggestions": [
+        {
+          "id": 36,
+          "title": "Complete End-of-Day Report",
+          "description": "Compile a comprehensive report summarizing today's accomplishments.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "An end-of-day report ensures smooth transitions for tomorrow."
+            },
+            {
+              "role": "user",
+              "message": "What should the report include?"
+            },
+            {
+              "role": "assistant",
+              "message": "Include completed tasks, encountered challenges, and key insights."
+            }
+          ]
+        },
+        {
+          "id": 37,
+          "title": "Backup Documents",
+          "description": "Ensure all critical documents are saved and organized securely.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Backing up documents is crucial for data security."
+            },
+            {
+              "role": "user",
+              "message": "Which files should be prioritized?"
+            },
+            {
+              "role": "assistant",
+              "message": "Focus on recent reports, presentations, and client communications."
+            }
+          ]
+        },
+        {
+          "id": 38,
+          "title": "Send Team Update",
+          "description": "Share a summary of today's progress and next steps with your team.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "A team update will keep everyone aligned."
+            },
+            {
+              "role": "user",
+              "message": "What details are key?"
+            },
+            {
+              "role": "assistant",
+              "message": "Highlight accomplishments, pending tasks, and upcoming deadlines."
+            }
+          ]
+        },
+        {
+          "id": 39,
+          "title": "Review Completed Tasks",
+          "description": "Verify that all tasks are documented and marked complete.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Reviewing completed tasks ensures nothing is overlooked."
+            },
+            {
+              "role": "user",
+              "message": "How should I cross-check?"
+            },
+            {
+              "role": "assistant",
+              "message": "Use your task management app and email confirmations to verify."
+            }
+          ]
+        },
+        {
+          "id": 40,
+          "title": "Set Next Day Agenda",
+          "description": "Outline the urgent tasks and priorities for tomorrow.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Planning tomorrow's agenda now creates a head start."
+            },
+            {
+              "role": "user",
+              "message": "What should be prioritized?"
+            },
+            {
+              "role": "assistant",
+              "message": "Focus on urgent follow-ups and high-impact projects."
+            }
+          ]
+        }
+      ]
+    },
+    "17": {
+      "activity": "Concluding the workday and sending final communications",
+      "carousel": [
+        [
+          { "id": 121, "text": "User reviews emails on Outlook", "value": "0.8" },
+          { "id": 122, "text": "User organizes files on Drive", "value": "0.8" },
+          { "id": 123, "text": "User logs tasks in CRM", "value": "0.8" },
+          { "id": 124, "text": "User checks end-of-day data on Slack", "value": "0.8" },
+          { "id": 125, "text": "User finalizes reports on Trello", "value": "0.8" }
+        ],
+        [
+          { "id": 126, "text": "User sends wrap-up emails", "value": "0.8" },
+          { "id": 127, "text": "User updates status in Asana", "value": "0.8" },
+          { "id": 128, "text": "User reviews daily summaries", "value": "0.8" },
+          { "id": 129, "text": "User archives docs on SharePoint", "value": "0.8" },
+          { "id": 130, "text": "User sets final reminders on Calendar", "value": "0.9" }
+        ],
+        [
+          { "id": 131, "text": "User summarizes day’s work online", "value": "0.8" },
+          { "id": 132, "text": "User double-checks team feedback", "value": "0.8" },
+          { "id": 133, "text": "User reviews pending tasks", "value": "0.8" },
+          { "id": 134, "text": "User logs client communications", "value": "0.8" },
+          { "id": 135, "text": "User prepares exit meeting notes", "value": "0.8" }
+        ]
+      ],
+      "suggestions": [
+        {
+          "id": 41,
+          "title": "Finish Remaining Tasks",
+          "description": "Ensure all urgent tasks are completed before ending the day.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Finishing your remaining tasks will keep projects on track."
+            },
+            {
+              "role": "user",
+              "message": "Which tasks need the most focus?"
+            },
+            {
+              "role": "assistant",
+              "message": "Prioritize those with imminent deadlines and client deliverables."
+            }
+          ]
+        },
+        {
+          "id": 42,
+          "title": "Send Final Emails",
+          "description": "Dispatch all final communications and summaries to your team.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Final emails ensure everyone is informed of the day's outcomes."
+            },
+            {
+              "role": "user",
+              "message": "Who should receive these emails?"
+            },
+            {
+              "role": "assistant",
+              "message": "Send them to your team and key stakeholders."
+            }
+          ]
+        },
+        {
+          "id": 43,
+          "title": "Log Daily Achievements",
+          "description": "Document your accomplishments and challenges of the day.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Logging achievements helps track progress over time."
+            },
+            {
+              "role": "user",
+              "message": "How detailed should the log be?"
+            },
+            {
+              "role": "assistant",
+              "message": "Include highlights, challenges, and lessons learned."
+            }
+          ]
+        },
+        {
+          "id": 44,
+          "title": "Organize Work Files",
+          "description": "Sort and archive work files to maintain an organized workspace.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Organizing your files improves efficiency and retrieval."
+            },
+            {
+              "role": "user",
+              "message": "What method do you suggest?"
+            },
+            {
+              "role": "assistant",
+              "message": "Use structured folders and consistent naming conventions."
+            }
+          ]
+        },
+        {
+          "id": 45,
+          "title": "Prepare for Tomorrow",
+          "description": "Outline the next day's urgent tasks and priorities for a smooth start.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "A prepared plan for tomorrow sets you up for success."
+            },
+            {
+              "role": "user",
+              "message": "What should I prioritize?"
+            },
+            {
+              "role": "assistant",
+              "message": "Focus on upcoming deadlines and critical follow-ups."
+            }
+          ]
+        }
+      ]
+    },
+    "18": {
+      "activity": "Relaxing at home while catching up on news and social media",
+      "carousel": [
+        [
+          { "id": 136, "text": "User streams shows on Netflix daily", "value": "0.8" },
+          { "id": 137, "text": "User browses lifestyle blogs on Flipboard", "value": "0.8" },
+          { "id": 138, "text": "User checks social feeds on Twitter", "value": "0.8" },
+          { "id": 139, "text": "User reads tech updates on Wired", "value": "0.8" },
+          { "id": 140, "text": "User reviews trending topics on Reddit", "value": "0.8" }
+        ],
+        [
+          { "id": 141, "text": "User watches vlogs on YouTube", "value": "0.8" },
+          { "id": 142, "text": "User explores DIY projects on Pinterest", "value": "0.8" },
+          { "id": 143, "text": "User listens to music on Spotify", "value": "0.8" },
+          { "id": 144, "text": "User scrolls Instagram for trends", "value": "0.8" },
+          { "id": 145, "text": "User checks recipes on AllRecipes", "value": "0.8" }
+        ],
+        [
+          { "id": 146, "text": "User chats on WhatsApp with friends", "value": "0.8" },
+          { "id": 147, "text": "User follows news on BBC regularly", "value": "0.8" },
+          { "id": 148, "text": "User reads entertainment on TMZ", "value": "0.8" },
+          { "id": 149, "text": "User tracks trends on TikTok", "value": "0.8" },
+          { "id": 150, "text": "User checks local events on Eventbrite", "value": "0.8" }
+        ]
+      ],
+      "suggestions": [
+        {
+          "id": 46,
+          "title": "Stream Evening Shows",
+          "description": "Relax by watching your favorite shows and movies on your preferred platform.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Evening streaming is a great way to unwind."
+            },
+            {
+              "role": "user",
+              "message": "What shows would you recommend?"
+            },
+            {
+              "role": "assistant",
+              "message": "Mix dramas and comedies for a balanced viewing experience."
+            }
+          ]
+        },
+        {
+          "id": 47,
+          "title": "Read Leisure News",
+          "description": "Catch up on non-work related news from trusted lifestyle outlets.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Leisure news updates can offer a refreshing break."
+            },
+            {
+              "role": "user",
+              "message": "Which outlets have quality news?"
+            },
+            {
+              "role": "assistant",
+              "message": "Explore lifestyle and entertainment sections for engaging stories."
+            }
+          ]
+        },
+        {
+          "id": 48,
+          "title": "Engage on Social Platforms",
+          "description": "Interact on social media by posting updates and commenting on posts.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Engaging on social media boosts your online presence."
+            },
+            {
+              "role": "user",
+              "message": "How can I increase engagement?"
+            },
+            {
+              "role": "assistant",
+              "message": "Share interesting posts and actively respond to comments."
+            }
+          ]
+        },
+        {
+          "id": 49,
+          "title": "Pursue Hobbies",
+          "description": "Spend time on creative projects or hobbies that inspire you.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Dedicating time to hobbies nurtures your creativity."
+            },
+            {
+              "role": "user",
+              "message": "What hobbies should I explore?"
+            },
+            {
+              "role": "assistant",
+              "message": "Consider DIY projects, painting, or creative writing."
+            }
+          ]
+        },
+        {
+          "id": 50,
+          "title": "Plan a Relaxing Dinner",
+          "description": "Decide on a meal plan that balances taste and nutrition for a relaxed evening.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Planning dinner can set the tone for a pleasant evening."
+            },
+            {
+              "role": "user",
+              "message": "What meal options are ideal?"
+            },
+            {
+              "role": "assistant",
+              "message": "Choose a healthy, light dish or opt for a nutritious takeout."
+            }
+          ]
+        }
+      ]
+    },
+    "19": {
+      "activity": "Preparing dinner and connecting with family",
+      "carousel": [
+        [
+          { "id": 151, "text": "User checks recipes on AllRecipes daily", "value": "0.8" },
+          { "id": 152, "text": "User orders groceries via Instacart", "value": "0.8" },
+          { "id": 153, "text": "User plans meals with calendar apps", "value": "0.8" },
+          { "id": 154, "text": "User reads food blogs on Food52", "value": "0.8" },
+          { "id": 155, "text": "User explores healthy diets online", "value": "0.8" }
+        ],
+        [
+          { "id": 156, "text": "User uses meal planners on Yummly", "value": "0.8" },
+          { "id": 157, "text": "User tracks calories with MyFitnessPal", "value": "0.8" },
+          { "id": 158, "text": "User organizes dinner menus on Trello", "value": "0.8" },
+          { "id": 159, "text": "User compares recipes on Epicurious", "value": "0.8" },
+          { "id": 160, "text": "User samples dishes from food blogs", "value": "0.8" }
+        ],
+        [
+          { "id": 161, "text": "User video calls family on FaceTime", "value": "0.8" },
+          { "id": 162, "text": "User checks restaurant deals locally", "value": "0.8" },
+          { "id": 163, "text": "User reads culinary reviews on Yelp", "value": "0.8" },
+          { "id": 164, "text": "User plans weekend outings with family", "value": "0.8" },
+          { "id": 165, "text": "User shares dinner photos on Instagram", "value": "0.8" }
+        ]
+      ],
+      "suggestions": [
+        {
+          "id": 51,
+          "title": "Try New Recipes",
+          "description": "Experiment with a new dinner recipe to add variety to your meals.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Trying a new recipe can revitalize your dinner routine."
+            },
+            {
+              "role": "user",
+              "message": "What cuisine should I explore?"
+            },
+            {
+              "role": "assistant",
+              "message": "Consider Mediterranean dishes for a healthy twist."
+            }
+          ]
+        },
+        {
+          "id": 52,
+          "title": "Review Grocery Needs",
+          "description": "Update your grocery list and plan your shopping for the week.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "A current grocery list ensures you're always stocked."
+            },
+            {
+              "role": "user",
+              "message": "Any tips on organizing it?"
+            },
+            {
+              "role": "assistant",
+              "message": "Use a mobile app to track essentials and find local deals."
+            }
+          ]
+        },
+        {
+          "id": 53,
+          "title": "Plan Family Outing",
+          "description": "Discuss and schedule a family activity or outing for the weekend.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Planning a family outing can create lasting memories."
+            },
+            {
+              "role": "user",
+              "message": "What activities work best?"
+            },
+            {
+              "role": "assistant",
+              "message": "Consider a picnic, museum visit, or local park outing."
+            }
+          ]
+        },
+        {
+          "id": 54,
+          "title": "Organize Home Chores",
+          "description": "List and schedule household tasks to maintain an orderly home.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Organizing chores helps manage your household efficiently."
+            },
+            {
+              "role": "user",
+              "message": "How do I prioritize these tasks?"
+            },
+            {
+              "role": "assistant",
+              "message": "Divide tasks into daily and weekly lists for balance."
+            }
+          ]
+        },
+        {
+          "id": 55,
+          "title": "Watch a Family Movie",
+          "description": "Select a movie for a relaxing family viewing experience tonight.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "A family movie can help everyone unwind together."
+            },
+            {
+              "role": "user",
+              "message": "Which genre works best?"
+            },
+            {
+              "role": "assistant",
+              "message": "Opt for a light-hearted comedy or adventure film."
+            }
+          ]
+        }
+      ]
+    },
+    "20": {
+      "activity": "Engaging in leisure reading and pursuing personal hobbies",
+      "carousel": [
+        [
+          { "id": 166, "text": "User reads novels on Kindle daily", "value": "0.8" },
+          { "id": 167, "text": "User browses art galleries on Artsy", "value": "0.8" },
+          { "id": 168, "text": "User explores DIY projects on YouTube", "value": "0.8" },
+          { "id": 169, "text": "User studies history on Curiosity", "value": "0.8" },
+          { "id": 170, "text": "User reviews book summaries online", "value": "0.8" }
+        ],
+        [
+          { "id": 171, "text": "User listens to podcasts on Spotify", "value": "0.8" },
+          { "id": 172, "text": "User follows creative blogs on Medium", "value": "0.8" },
+          { "id": 173, "text": "User writes in a digital journal", "value": "0.8" },
+          { "id": 174, "text": "User explores music trends on SoundCloud", "value": "0.8" },
+          { "id": 175, "text": "User tracks awards on Goodreads", "value": "0.8" }
+        ],
+        [
+          { "id": 176, "text": "User engages in online art forums", "value": "0.8" },
+          { "id": 177, "text": "User watches tutorials on Vimeo", "value": "0.8" },
+          { "id": 178, "text": "User practices sketching on Procreate", "value": "0.8" },
+          { "id": 179, "text": "User joins virtual book clubs", "value": "0.8" },
+          { "id": 180, "text": "User checks art trends on Behance", "value": "0.8" }
+        ]
+      ],
+      "suggestions": [
+        {
+          "id": 56,
+          "title": "Read a New Book",
+          "description": "Dedicate time to a captivating book or article to spark creativity.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Reading can open new perspectives and ideas."
+            },
+            {
+              "role": "user",
+              "message": "Which genres should I explore?"
+            },
+            {
+              "role": "assistant",
+              "message": "Consider fiction, non-fiction, or industry-related topics."
+            }
+          ]
+        },
+        {
+          "id": 57,
+          "title": "Start a DIY Project",
+          "description": "Begin a creative DIY project to express your artistic side.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "A DIY project can fuel your creative energy."
+            },
+            {
+              "role": "user",
+              "message": "What project might be suitable?"
+            },
+            {
+              "role": "assistant",
+              "message": "Consider a home decor project or a custom art piece."
+            }
+          ]
+        },
+        {
+          "id": 58,
+          "title": "Join a Virtual Club",
+          "description": "Engage with peers in a virtual book or hobby club to share interests.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Joining a virtual club can expand your network."
+            },
+            {
+              "role": "user",
+              "message": "How do I find one?"
+            },
+            {
+              "role": "assistant",
+              "message": "Search online communities that match your interests."
+            }
+          ]
+        },
+        {
+          "id": 59,
+          "title": "Watch Tutorial Videos",
+          "description": "Learn something new by watching detailed tutorials on your favorite subjects.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Tutorial videos are a great way to build new skills."
+            },
+            {
+              "role": "user",
+              "message": "Which topics are trending?"
+            },
+            {
+              "role": "assistant",
+              "message": "Try creative tutorials on YouTube or Vimeo for inspiration."
+            }
+          ]
+        },
+        {
+          "id": 60,
+          "title": "Journal Your Thoughts",
+          "description": "Reflect on your day by writing down ideas and insights in your journal.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Journaling can boost self-awareness and creativity."
+            },
+            {
+              "role": "user",
+              "message": "Any tips for effective journaling?"
+            },
+            {
+              "role": "assistant",
+              "message": "Keep it simple—note key thoughts and reflections regularly."
+            }
+          ]
+        }
+      ]
+    },
+    "21": {
+      "activity": "Winding down, reflecting on the day, and planning for tomorrow",
+      "carousel": [
+        [
+          { "id": 181, "text": "User journals in planner apps nightly", "value": "0.8" },
+          { "id": 182, "text": "User uses Calm for nightly meditation", "value": "0.8" },
+          { "id": 183, "text": "User reads bedtime stories online", "value": "0.8" },
+          { "id": 184, "text": "User tracks sleep with a Fitbit", "value": "0.8" },
+          { "id": 185, "text": "User reviews daily goals on Trello", "value": "0.8" }
+        ],
+        [
+          { "id": 186, "text": "User sets goals in digital journals", "value": "0.8" },
+          { "id": 187, "text": "User reflects via Evernote notes", "value": "0.8" },
+          { "id": 188, "text": "User monitors health on Apple Watch", "value": "0.8" },
+          { "id": 189, "text": "User studies tomorrow's agenda", "value": "0.8" },
+          { "id": 190, "text": "User plans next day in Notion", "value": "0.8" }
+        ],
+        [
+          { "id": 191, "text": "User logs reflections on Day One", "value": "0.8" },
+          { "id": 192, "text": "User uses Headspace for calm", "value": "0.8" },
+          { "id": 193, "text": "User reads inspirational quotes", "value": "0.8" },
+          { "id": 194, "text": "User reviews personal achievements", "value": "0.8" },
+          { "id": 195, "text": "User relaxes with soft music online", "value": "0.8" }
+        ]
+      ],
+      "suggestions": [
+        {
+          "id": 61,
+          "title": "Journal Daily Reflections",
+          "description": "Write down your achievements and lessons learned today in detail.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Journaling your reflections can set a positive tone for tomorrow."
+            },
+            {
+              "role": "user",
+              "message": "What details should I note?"
+            },
+            {
+              "role": "assistant",
+              "message": "Focus on accomplishments, challenges, and key takeaways."
+            }
+          ]
+        },
+        {
+          "id": 62,
+          "title": "Plan Tomorrow's Goals",
+          "description": "Outline your key priorities and tasks for the next day for a smooth start.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Planning tomorrow helps in managing your time effectively."
+            },
+            {
+              "role": "user",
+              "message": "How detailed should my plan be?"
+            },
+            {
+              "role": "assistant",
+              "message": "Include major tasks, deadlines, and areas needing focus."
+            }
+          ]
+        },
+        {
+          "id": 63,
+          "title": "Practice Meditation",
+          "description": "Spend a few minutes meditating to relax and clear your mind before sleep.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Meditation can significantly reduce stress at day's end."
+            },
+            {
+              "role": "user",
+              "message": "Which method should I try?"
+            },
+            {
+              "role": "assistant",
+              "message": "Guided meditations on apps like Headspace can be very effective."
+            }
+          ]
+        },
+        {
+          "id": 64,
+          "title": "Read for Leisure",
+          "description": "Enjoy a calming book or an inspirational article to wind down.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "Reading light content can help transition you to rest."
+            },
+            {
+              "role": "user",
+              "message": "What type of reading works best at night?"
+            },
+            {
+              "role": "assistant",
+              "message": "Try motivational or soothing literature to relax your mind."
+            }
+          ]
+        },
+        {
+          "id": 65,
+          "title": "Unplug and Recharge",
+          "description": "Turn off your devices for at least 30 minutes to allow your mind to rest.",
+          "chats": [
+            {
+              "role": "assistant",
+              "message": "A digital detox before sleep can improve your sleep quality."
+            },
+            {
+              "role": "user",
+              "message": "How long should I unplug?"
+            },
+            {
+              "role": "assistant",
+              "message": "Try to disconnect for at least 30 minutes before bedtime."
+            }
+          ]
+        }
+      ]
+    }
+  }
+  

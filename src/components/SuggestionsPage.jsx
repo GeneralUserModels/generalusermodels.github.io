@@ -1,16 +1,7 @@
-// src/components/SuggestionsPage.jsx
-import React, { useEffect, useState } from 'react';
-import suggestionsData from '../data/suggestions.json';
+import React from 'react';
 import SuggestionItem from './SuggestionItem';
 
-const SuggestionsPage = () => {
-  const [suggestions, setSuggestions] = useState([]);
-
-  useEffect(() => {
-    // Load dummy suggestions
-    setSuggestions(suggestionsData);
-  }, []);
-
+const SuggestionsPage = ({ suggestionsData }) => {
   return (
     <div
       className="page-content"
@@ -22,16 +13,16 @@ const SuggestionsPage = () => {
       {/* Title Section */}
       <div
         style={{
-          padding: '30px 0 10px 5%' // top, right, bottom, left (5% gives a little left margin)
+          padding: '30px 0 10px 5%'
         }}
       >
         <h1
           style={{
-            fontSize: 30,
+            fontSize: 25,
             fontWeight: 'bold',
             marginLeft: 20,
             color: '#d6ceba',
-            // paddingBottom: 10
+            paddingBottom: 10
           }}
         >
           Suggestions
@@ -39,14 +30,8 @@ const SuggestionsPage = () => {
       </div>
 
       {/* Suggestions List */}
-      {suggestions.map((suggestion) => (
-        <div
-          key={suggestion.id}
-          style={{
-            width: '85%',          // Each suggestion takes up 90% of the parent width
-            margin: '0 auto 20px'    // Centered horizontally with a bottom margin of 20px
-          }}
-        >
+      {suggestionsData.map((suggestion) => (
+        <div key={suggestion.id} style={{ width: '85%', margin: '0 auto 20px' }}>
           <SuggestionItem suggestion={suggestion} />
         </div>
       ))}

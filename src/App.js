@@ -1,37 +1,43 @@
-import React, { useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import React from 'react';
+import AppContent from './AppContent';
+import Carousel from './components/Carousel';
 
-import Navbar from './components/Navbar';
-import SuggestionsPage from './components/SuggestionsPage';
-import ChatPage from './components/ChatPage';
-
-const App = () => {
-  // Track active chats as an array of suggestion objects
-  const [activeChats, setActiveChats] = useState([]);
-
-  // Function to add a suggestion to the active chats list (no duplicates)
-  const handleOpenChat = (suggestion) => {
-    setActiveChats((prev) => {
-      const alreadyActive = prev.some((s) => s.id === suggestion.id);
-      return alreadyActive ? prev : [...prev, suggestion];
-    });
-  };
-
+const App = ({ carouselData, suggestionsData }) => {
   return (
-    <div className="app-container">
-      {/* Navbar with active chats listed */}
-      <Navbar activeChats={activeChats} />
-
-      {/* Main content area */}
-      <div className="main-content">
-        <Routes>
-          <Route path="/" element={<SuggestionsPage />} />
-          {/* Pass handleOpenChat to ChatPage so it can register active chats */}
-          <Route
-            path="/chat/:id"
-            element={<ChatPage onOpenChat={handleOpenChat} />}
-          />
-        </Routes>
+    <div style={{ height: '80vh', overflowY: 'auto', backgroundColor: 'var(--color-main-bg)' }}>
+      {/* Carousel Section */}
+      <div
+        style={{
+          margin: '0',
+          height: '250px',
+          borderRadius: '8px',
+          overflow: 'hidden',
+          paddingBottom: '0'
+        }}
+      >
+        <Carousel carouselData={carouselData} />
+      </div>
+      {/* App Section */}
+      <div
+        style={{
+          margin: '10px',
+          padding: '10px',
+          paddingTop: '0',
+          marginTop: '0'
+        }}
+      >
+        <h2 className="appTitle" style={{ color: 'var(--color-main-text)' }}>
+          Horizon App
+        </h2>
+        <div
+          style={{
+            border: '1px solid rgba(204, 204, 204, 0.5)',
+            borderRadius: '8px',
+            height: '80vh'
+          }}
+        >
+          <AppContent suggestionsData={suggestionsData} />
+        </div>
       </div>
     </div>
   );
