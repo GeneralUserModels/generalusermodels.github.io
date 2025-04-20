@@ -6,7 +6,7 @@
           { "id": 1, "text": "User uses Bloomberg Terminal daily", "value": "0.8" },
           { "id": 2, "text": "User leverages Reuters for headlines", "value": "0.9" },
           { "id": 3, "text": "User reads WSJ in the morning", "value": "0.8" },
-          { "id": 4, "text": "User scans CNBC for pre-market trends", "value": "0.9" },
+          { "id": 4, "text": "User scans CNBC for pre‑market trends", "value": "0.9" },
           { "id": 5, "text": "User studies FT economic forecasts", "value": "0.9" }
         ],
         [
@@ -20,108 +20,64 @@
           { "id": 11, "text": "User plans day with calendar apps", "value": "0.8" },
           { "id": 12, "text": "User organizes tasks in Notion", "value": "0.9" },
           { "id": 13, "text": "User sets priorities for the day", "value": "0.8" },
-          { "id": 14, "text": "User updates to-do lists online", "value": "0.9" },
+          { "id": 14, "text": "User updates to‑do lists online", "value": "0.9" },
           { "id": 15, "text": "User reviews morning analytics", "value": "0.8" }
         ]
       ],
       "suggestions": [
         {
           "id": 1,
-          "title": "Define Daily Goals",
-          "description": "Outline top priorities and tasks for a productive day.",
+          "title": "Automate Inbox Triage",
+          "description": "I drafted a rule set that archives newsletters, pins ticker‑related alerts, and auto‑flags leadership mail so your first scan targets decision‑critical messages; activating it will reduce inbox noise by ~35 %.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "I recommend starting your day by defining clear goals. Consider drafting a priority list."
-            },
-            {
-              "role": "user",
-              "message": "What should I include in the list?"
-            },
-            {
-              "role": "assistant",
-              "message": "Include urgent tasks, scheduled meetings, and personal targets for a balanced plan."
-            }
+            { "role": "assistant", "message": "I've created the rules and staged them for review—ready to deploy?" },
+            { "role": "user", "message": "Will VIP messages still come through instantly?" },
+            { "role": "assistant", "message": "Yes, anything from your VIP list bypasses filters and triggers a Slack ping." }
           ]
         },
         {
           "id": 2,
-          "title": "Process Overnight Emails",
-          "description": "Sort and flag important messages received overnight.",
+          "title": "Two‑Minute Priority Matrix",
+          "description": "Using your overnight email flags and calendar, I generated an Eisenhower matrix and auto‑blocked two 90‑minute focus slots for the urgent‑important quadrant so nothing slips through cracks today.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Your inbox is busy; filtering overnight emails can help you focus."
-            },
-            {
-              "role": "user",
-              "message": "How should I prioritize them?"
-            },
-            {
-              "role": "assistant",
-              "message": "Sort by sender importance and flag those with urgent subjects."
-            }
+            { "role": "assistant", "message": "Matrix is live in Notion—want me to push the focus slots to Outlook now?" },
+            { "role": "user", "message": "Push them but mark as tentative." },
+            { "role": "assistant", "message": "Done—slots appear as tentative and can be moved if conflicts arise." }
           ]
         },
         {
           "id": 3,
-          "title": "Review Market Reports",
-          "description": "Analyze key market updates and economic data to inform decisions.",
+          "title": "Daily Brief Template",
+          "description": "I built a one‑page morning brief that stitches Bloomberg pre‑market moves, flagged mails, and today’s meetings; the doc auto‑refreshes at 8 : 55 AM and lands in your draft folder for quick sharing.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Reviewing market reports can provide valuable insights for your day."
-            },
-            {
-              "role": "user",
-              "message": "Which reports are most critical?"
-            },
-            {
-              "role": "assistant",
-              "message": "Focus on economic forecasts and industry trend summaries."
-            }
+            { "role": "assistant", "message": "Brief template compiled—preview?" },
+            { "role": "user", "message": "Show me the pre‑market section only." },
+            { "role": "assistant", "message": "Here’s the snippet with S&P futures, treasury yields, and FX heatmap—looks good?" }
           ]
         },
         {
           "id": 4,
-          "title": "Plan Morning Sync",
-          "description": "Schedule a brief meeting to align with your team for the day.",
+          "title": "Volatility Spike Alert",
+          "description": "I configured Reuters and CNBC feeds to ping Slack only when any watched index moves ±1 % intraday, ensuring you catch anomalies without constant manual refreshing.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "A quick sync can help coordinate your team's daily priorities."
-            },
-            {
-              "role": "user",
-              "message": "What topics should we cover?"
-            },
-            {
-              "role": "assistant",
-              "message": "Discuss progress, challenges, and set immediate action items."
-            }
+            { "role": "assistant", "message": "Alerts live—threshold set at 1 % with a 15‑minute cool‑down to avoid spam." },
+            { "role": "user", "message": "Can we add VIX > 18 as a trigger?" },
+            { "role": "assistant", "message": "Added—VIX breach will fire a high‑priority notification." }
           ]
         },
         {
           "id": 5,
-          "title": "Draft Daily Briefing",
-          "description": "Prepare a concise summary of the day's planned activities.",
+          "title": "Pomodoro Focus Session",
+          "description": "I prepared a 25‑minute Pomodoro timer with automatic Do‑Not‑Disturb (Bloomberg audio excluded) and scheduled a 5‑minute stretch reminder so you can power through top tasks without interruption.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Drafting a daily briefing can help structure your workflow efficiently."
-            },
-            {
-              "role": "user",
-              "message": "What should the briefing include?"
-            },
-            {
-              "role": "assistant",
-              "message": "Include key tasks, meetings, and critical updates for your schedule."
-            }
+            { "role": "assistant", "message": "Timer primed—start your first Pomodoro now?" },
+            { "role": "user", "message": "Give me five minutes, then start." },
+            { "role": "assistant", "message": "Starting in five; you’ll get a heads‑up ping." }
           ]
         }
       ]
     },
+  
     "10": {
       "activity": "Analyzing market data and preparing analytical reports",
       "carousel": [
@@ -142,7 +98,7 @@
         [
           { "id": 26, "text": "User integrates APIs for data feeds", "value": "0.8" },
           { "id": 27, "text": "User configures alerts via Slack", "value": "0.8" },
-          { "id": 28, "text": "User cross-checks on Bloomberg", "value": "0.8" },
+          { "id": 28, "text": "User cross‑checks on Bloomberg", "value": "0.8" },
           { "id": 29, "text": "User tracks volatility metrics", "value": "0.8" },
           { "id": 30, "text": "User validates data with Notion", "value": "0.9" }
         ]
@@ -150,101 +106,57 @@
       "suggestions": [
         {
           "id": 6,
-          "title": "Refresh Market Dashboard",
-          "description": "Integrate live data feeds into your dashboard for real-time insights.",
+          "title": "Embed FedWatch Probabilities",
+          "description": "I integrated CME FedWatch API into Tableau, refreshing every 15 minutes and caching extracts locally so your dashboard now shows live rate‑hike probability curves with negligible latency.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Consider refreshing your dashboard with real-time data integration."
-            },
-            {
-              "role": "user",
-              "message": "How can I update my dashboard effectively?"
-            },
-            {
-              "role": "assistant",
-              "message": "Integrate live feeds and add dynamic charts for seamless updates."
-            }
+            { "role": "assistant", "message": "Live FedWatch curves are plotted on the 'Macro' tab—open it?" },
+            { "role": "user", "message": "Open and highlight the next FOMC month." },
+            { "role": "assistant", "message": "Highlighted; change propagates to PDF exports automatically." }
           ]
         },
         {
           "id": 7,
-          "title": "Update Trend Analysis",
-          "description": "Review recent stock trends and update your analytical reports accordingly.",
+          "title": "Momentum Strategy Back‑Test",
+          "description": "I spun up a Jupyter notebook that back‑tests a 20/80‑day momentum strategy on your equity shortlist, factoring in 5 bps transaction costs and outputting Sharpe ratios and drawdowns.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Updating trend analysis will give you a clearer picture of market shifts."
-            },
-            {
-              "role": "user",
-              "message": "Which trends should I focus on?"
-            },
-            {
-              "role": "assistant",
-              "message": "Look at volatility, volume, and key index movements."
-            }
+            { "role": "assistant", "message": "Notebook finished—top‑performer Sharpe 1.42. Share the HTML report?" },
+            { "role": "user", "message": "Yes, email me and save in the research folder." },
+            { "role": "assistant", "message": "Report emailed and stored under /Research/Backtests/2025‑04‑19." }
           ]
         },
         {
           "id": 8,
-          "title": "Study Competitor Moves",
-          "description": "Analyze competitor performance and extract actionable insights for your strategy.",
+          "title": "Excel Heatmap Enhancement",
+          "description": "I applied conditional formatting across volume, intraday range %, and 14‑day RSI columns, turning extreme values into red or green gradients and inserting a mini‑chart legend for quick interpretation.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Competitor analysis could reveal key strategic shifts."
-            },
-            {
-              "role": "user",
-              "message": "How do I approach this comparison?"
-            },
-            {
-              "role": "assistant",
-              "message": "Evaluate competitors' financials and market positioning."
-            }
+            { "role": "assistant", "message": "Heatmap live—want me to freeze columns A‑C for easier scroll?" },
+            { "role": "user", "message": "Freeze them and add filter drop‑downs." },
+            { "role": "assistant", "message": "Columns frozen; filters added." }
           ]
         },
         {
           "id": 9,
-          "title": "Prepare Client Briefing",
-          "description": "Draft key points for upcoming client discussions with detailed market insights.",
+          "title": "One‑Page Client Brief",
+          "description": "I drafted a concise PDF summarizing today’s macro shifts, sector‑specific implications, and plain‑language action points for Client A; a glossary sidebar explains any unavoidable jargon.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "A well-prepared briefing can boost client confidence."
-            },
-            {
-              "role": "user",
-              "message": "What details should I include?"
-            },
-            {
-              "role": "assistant",
-              "message": "Include recent data, competitive insights, and strategic recommendations."
-            }
+            { "role": "assistant", "message": "PDF stored in Client‑A/Briefs—ready to send?" },
+            { "role": "user", "message": "Add an ESG note, then send." },
+            { "role": "assistant", "message": "ESG note inserted; email scheduled for 11 AM." }
           ]
         },
         {
           "id": 10,
-          "title": "Optimize Data Tools",
-          "description": "Ensure your analytical tools are calibrated for accuracy and efficiency.",
+          "title": "Stress‑Test Scenarios",
+          "description": "I parameterized three macro scenarios (+100 bps rates, oil >$100, USD‑EUR 10 % swing) and ran them through your risk model, exporting VaR and peak‑to‑trough declines for quick review.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Optimizing your tools will lead to more reliable analysis."
-            },
-            {
-              "role": "user",
-              "message": "Which tools need updating?"
-            },
-            {
-              "role": "assistant",
-              "message": "Review integrations and update any outdated modules."
-            }
+            { "role": "assistant", "message": "Scenario results ready in Excel—open now?" },
+            { "role": "user", "message": "Open and plot in a clustered bar chart." },
+            { "role": "assistant", "message": "Chart added to the Scenario sheet." }
           ]
         }
       ]
     },
+  
     "11": {
       "activity": "Conducting deep analysis on client portfolios and strategies",
       "carousel": [
@@ -260,7 +172,7 @@
           { "id": 37, "text": "User uses R for quantitative tests", "value": "0.8" },
           { "id": 38, "text": "User monitors shifts on WSJ", "value": "0.8" },
           { "id": 39, "text": "User checks sentiment on CNBC", "value": "0.8" },
-          { "id": 40, "text": "User cross-checks data in Notion", "value": "0.8" }
+          { "id": 40, "text": "User cross‑checks data in Notion", "value": "0.8" }
         ],
         [
           { "id": 41, "text": "User models risks using MATLAB", "value": "0.8" },
@@ -273,106 +185,62 @@
       "suggestions": [
         {
           "id": 11,
-          "title": "Assess Portfolio Health",
-          "description": "Review client portfolios thoroughly to gauge performance and risks.",
+          "title": "Factor Exposure Decomposition",
+          "description": "I executed a five‑factor regression for each client portfolio, generating coefficient charts and flagging any beta drift > 0.25 versus benchmark so hidden tilts are surfaced instantly.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Assessing portfolio health can uncover hidden opportunities."
-            },
-            {
-              "role": "user",
-              "message": "Which metrics should I focus on?"
-            },
-            {
-              "role": "assistant",
-              "message": "Look at growth rates, asset distribution, and market conditions."
-            }
+            { "role": "assistant", "message": "Regression output is ready—open the visualization deck?" },
+            { "role": "user", "message": "Open and annotate the drift flags." },
+            { "role": "assistant", "message": "Annotations added as callouts in red." }
           ]
         },
         {
           "id": 12,
-          "title": "Run Risk Models",
-          "description": "Leverage advanced risk models to identify potential investment pitfalls.",
+          "title": "Monte Carlo Stress Simulation",
+          "description": "I ran 10 000 Monte Carlo paths with Student‑t distributions to capture fat tails, exporting 95 % VaR and expected shortfall tables for each portfolio and benchmark.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Risk modeling is crucial to preempt market challenges."
-            },
-            {
-              "role": "user",
-              "message": "How do I interpret these models?"
-            },
-            {
-              "role": "assistant",
-              "message": "Focus on volatility indices and stress-test outcomes."
-            }
+            { "role": "assistant", "message": "Simulation complete—want the CSV or interactive dashboard?" },
+            { "role": "user", "message": "Interactive, please." },
+            { "role": "assistant", "message": "Dashboard published to Power BI with drill‑through filters." }
           ]
         },
         {
           "id": 13,
-          "title": "Refine Investment Plan",
-          "description": "Adjust your investment strategy based on the latest market data.",
+          "title": "Narrative Performance Summary",
+          "description": "I crafted a 400‑word story‑driven summary translating quantitative results into client‑friendly language, peppered with sparkline charts and pull quotes for quick digestion.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Refining your plan can enhance portfolio performance."
-            },
-            {
-              "role": "user",
-              "message": "What adjustments do you suggest?"
-            },
-            {
-              "role": "assistant",
-              "message": "Consider rebalancing assets and updating risk assessments."
-            }
+            { "role": "assistant", "message": "Draft ready—review now or after lunch?" },
+            { "role": "user", "message": "After lunch; schedule reminder." },
+            { "role": "assistant", "message": "Reminder set for 1 PM." }
           ]
         },
         {
           "id": 14,
-          "title": "Schedule Client Review",
-          "description": "Plan follow-up meetings with clients to discuss portfolio performance.",
+          "title": "Risk KPI Dashboard Prototype",
+          "description": "I built an interactive Power BI dashboard featuring tracking error, beta drift, and sector concentration alerts, updating hourly with live market feeds.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Regular reviews build strong client relationships."
-            },
-            {
-              "role": "user",
-              "message": "How often should I schedule these reviews?"
-            },
-            {
-              "role": "assistant",
-              "message": "A monthly review is ideal for consistent updates."
-            }
+            { "role": "assistant", "message": "Prototype live—share link with the wider team?" },
+            { "role": "user", "message": "Share but set view‑only." },
+            { "role": "assistant", "message": "Shared with view‑only permissions." }
           ]
         },
         {
           "id": 15,
-          "title": "Merge Data Sources",
-          "description": "Combine internal analytics with external market data for comprehensive insights.",
+          "title": "Tactical Rebalancing Memo",
+          "description": "Based on today’s factor tilt analysis, I drafted a memo recommending a 2 % overweight to quality and 1 % underweight to momentum, including estimated transaction costs.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Merging data can lead to deeper, actionable insights."
-            },
-            {
-              "role": "user",
-              "message": "What integration tools work best?"
-            },
-            {
-              "role": "assistant",
-              "message": "Use platforms that support multi-source dashboards."
-            }
+            { "role": "assistant", "message": "Memo saved—want me to attach to the client portal?" },
+            { "role": "user", "message": "Yes, and notify account lead." },
+            { "role": "assistant", "message": "Uploaded and Slack DM sent to the lead." }
           ]
         }
       ]
     },
+  
     "12": {
       "activity": "Conducting a midday review and preparing for lunch discussions",
       "carousel": [
         [
-          { "id": 46, "text": "User cross-checks trends on Reuters", "value": "0.8" },
+          { "id": 46, "text": "User cross‑checks trends on Reuters", "value": "0.8" },
           { "id": 47, "text": "User analyzes midday data on WSJ", "value": "0.8" },
           { "id": 48, "text": "User visualizes metrics with Tableau", "value": "0.9" },
           { "id": 49, "text": "User monitors KPIs via dashboards", "value": "0.8" },
@@ -388,7 +256,7 @@
         [
           { "id": 56, "text": "User tracks analytics with PowerBI", "value": "0.8" },
           { "id": 57, "text": "User updates reports in Slack", "value": "0.8" },
-          { "id": 58, "text": "User fine-tunes project data", "value": "0.8" },
+          { "id": 58, "text": "User fine‑tunes project data", "value": "0.8" },
           { "id": 59, "text": "User reviews progress on Asana", "value": "0.9" },
           { "id": 60, "text": "User logs daily updates online", "value": "0.8" }
         ]
@@ -396,101 +264,57 @@
       "suggestions": [
         {
           "id": 16,
-          "title": "Plan Lunch Meeting",
-          "description": "Prepare talking points and an agenda for your midday meeting.",
+          "title": "Curate Lunch‑and‑Learn Agenda",
+          "description": "I scraped Slack discussions and trending articles to compile a 30‑minute lunch‑and‑learn agenda featuring GenAI compliance, Excel pro tips, and a micro market‑structure update, then dropped it into a shared doc.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Planning a concise lunch meeting can align your team."
-            },
-            {
-              "role": "user",
-              "message": "What should the agenda cover?"
-            },
-            {
-              "role": "assistant",
-              "message": "Include key updates, challenges, and immediate goals."
-            }
+            { "role": "assistant", "message": "Agenda posted—want me to send calendar invites?" },
+            { "role": "user", "message": "Yes, but mark optional." },
+            { "role": "assistant", "message": "Invites sent with optional status." }
           ]
         },
         {
           "id": 17,
-          "title": "Summarize Morning Trends",
-          "description": "Consolidate critical insights from the morning into a summary.",
+          "title": "Midday KPI Outlier Analysis",
+          "description": "I ran a quick z‑score scan across KPIs and flagged churn rate in APAC at 2.3σ above norm; a drill‑down report is ready with user‑level breakouts.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Summarizing trends clarifies next steps."
-            },
-            {
-              "role": "user",
-              "message": "Which trends are most crucial?"
-            },
-            {
-              "role": "assistant",
-              "message": "Focus on market shifts and team progress."
-            }
+            { "role": "assistant", "message": "Drill‑down PDF generated—open it now?" },
+            { "role": "user", "message": "Open and annotate potential causes." },
+            { "role": "assistant", "message": "Annotations added on page 2." }
           ]
         },
         {
           "id": 18,
-          "title": "Assess Performance Metrics",
-          "description": "Review performance indicators to measure current progress.",
+          "title": "Competitive News Flash",
+          "description": "I scraped Reuters and WSJ since market open, highlighting Competitor X guidance cut and Competitor Y M&A rumor; insights compiled into a two‑bullet Slack post ready for #strategy.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Metrics give a snapshot of your progress."
-            },
-            {
-              "role": "user",
-              "message": "Where can I see these metrics?"
-            },
-            {
-              "role": "assistant",
-              "message": "Check your dashboard and recent report summaries."
-            }
+            { "role": "assistant", "message": "Post is queued—publish?" },
+            { "role": "user", "message": "Publish after the call." },
+            { "role": "assistant", "message": "Scheduled for 12:45 PM." }
           ]
         },
         {
           "id": 19,
-          "title": "Streamline Workflow",
-          "description": "Identify workflow bottlenecks and improve daily processes.",
+          "title": "Mindful Recharge Plan",
+          "description": "I scheduled a 10‑minute guided breathing exercise and stretch on your Apple Watch at 12:50 PM to counter midday fatigue and boost focus.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Streamlining your workflow boosts efficiency."
-            },
-            {
-              "role": "user",
-              "message": "How do I spot these bottlenecks?"
-            },
-            {
-              "role": "assistant",
-              "message": "Review recurring issues in your task management tools."
-            }
+            { "role": "assistant", "message": "Routine set—silence notifications during it?" },
+            { "role": "user", "message": "Yes, DND ON." },
+            { "role": "assistant", "message": "DND enabled for the session." }
           ]
         },
         {
           "id": 20,
-          "title": "Adjust Strategies",
-          "description": "Refine tactics based on the latest data and feedback.",
+          "title": "Adjust Afternoon Action Plan",
+          "description": "Based on new insights and meeting spillovers, I shifted the client deck review to 3 PM and inserted a 45‑minute churn deep‑dive slot so priorities remain aligned.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Adjusting strategy is key for sustained success."
-            },
-            {
-              "role": "user",
-              "message": "What adjustments do you recommend?"
-            },
-            {
-              "role": "assistant",
-              "message": "Incorporate recent trends and team input into your plan."
-            }
+            { "role": "assistant", "message": "Calendar updated—any conflicts remaining?" },
+            { "role": "user", "message": "Looks good; send summary." },
+            { "role": "assistant", "message": "Summary emailed to you." }
           ]
         }
       ]
     },
+  
     "13": {
       "activity": "Attending virtual meetings and collaborating with team members",
       "carousel": [
@@ -519,106 +343,62 @@
       "suggestions": [
         {
           "id": 21,
-          "title": "Join Team Meeting",
-          "description": "Engage in the virtual meeting to align on projects and tasks.",
+          "title": "Real‑Time Decision Log",
+          "description": "I opened a shared Notion page that time‑stamps each decision and rationale in real‑time, ensuring everyone can trace commitments without replaying recordings.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Joining the team call ensures everyone is on the same page."
-            },
-            {
-              "role": "user",
-              "message": "What should I prepare before joining?"
-            },
-            {
-              "role": "assistant",
-              "message": "Review recent project updates and your key action items."
-            }
+            { "role": "assistant", "message": "Decision log link posted in chat—grant edit to co‑hosts?" },
+            { "role": "user", "message": "Yes, co‑hosts only." },
+            { "role": "assistant", "message": "Permissions updated." }
           ]
         },
         {
           "id": 22,
-          "title": "Document Meeting Notes",
-          "description": "Record key points and actions during the meeting for future reference.",
+          "title": "Instant Roadmap Poll",
+          "description": "I built a Zoom poll with four roadmap items plus an 'other' field, ready to capture priority votes and auto‑export to Trello once complete.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Documenting meeting notes is essential for follow-up."
-            },
-            {
-              "role": "user",
-              "message": "How can I organize them effectively?"
-            },
-            {
-              "role": "assistant",
-              "message": "Use a shared digital notebook to keep notes structured and accessible."
-            }
+            { "role": "assistant", "message": "Poll prepared—launch when discussion starts?" },
+            { "role": "user", "message": "Launch after slide 6." },
+            { "role": "assistant", "message": "Scheduled trigger at slide 6." }
           ]
         },
         {
           "id": 23,
-          "title": "Share Collaborative Files",
-          "description": "Ensure all team members have access to necessary resources.",
+          "title": "Interactive Whiteboard Session",
+          "description": "A Miro board is live with pre‑labeled swimlanes and locked background, and I enabled auto‑export to PNG after session end to streamline follow‑up.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Sharing files keeps the team informed."
-            },
-            {
-              "role": "user",
-              "message": "What file format works best?"
-            },
-            {
-              "role": "assistant",
-              "message": "Cloud storage services allow for various formats and easy sharing."
-            }
+            { "role": "assistant", "message": "Board link sent—need breakout rooms?" },
+            { "role": "user", "message": "Create two breakout rooms for ideation." },
+            { "role": "assistant", "message": "Rooms created and assigned randomly." }
           ]
         },
         {
           "id": 24,
-          "title": "Gather Team Feedback",
-          "description": "Collect input during the meeting to improve workflow and strategy.",
+          "title": "Capture Action Items Bot",
+          "description": "I configured a bot to parse 'TODO:' lines in Teams and auto‑create Trello cards with due dates and assignees so nothing is missed post‑call.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Team feedback can drive process improvements."
-            },
-            {
-              "role": "user",
-              "message": "What’s an effective way to gather it?"
-            },
-            {
-              "role": "assistant",
-              "message": "Use quick polls or direct questioning during the meeting."
-            }
+            { "role": "assistant", "message": "Bot arms when meeting ends—OK?" },
+            { "role": "user", "message": "Arm it now for testing." },
+            { "role": "assistant", "message": "Bot activated; test card created." }
           ]
         },
         {
           "id": 25,
-          "title": "Define Follow-Up Tasks",
-          "description": "Outline actionable steps and assign responsibilities post-meeting.",
+          "title": "Lightning Recap Scheduling",
+          "description": "I found a 10:30 AM slot for all attendees tomorrow and booked a 15‑minute recap with agenda auto‑populated from today’s decision log.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Clear follow-up tasks ensure project momentum."
-            },
-            {
-              "role": "user",
-              "message": "What should I include in the task list?"
-            },
-            {
-              "role": "assistant",
-              "message": "List deadlines, responsibilities, and next review dates."
-            }
+            { "role": "assistant", "message": "Invites out—reminder set for 10 minutes prior." },
+            { "role": "user", "message": "Great; attach action item list." },
+            { "role": "assistant", "message": "List attached to invite." }
           ]
         }
       ]
     },
+  
     "14": {
       "activity": "Working on detailed project analysis and report preparation",
       "carousel": [
         [
-          { "id": 76, "text": "User uses Power BI for visuals", "value": "0.9" },
+          { "id": 76, "text": "User uses Power BI for visuals", "value": "0.9" },
           { "id": 77, "text": "User analyzes trends on RStudio", "value": "0.8" },
           { "id": 78, "text": "User benchmarks via Salesforce", "value": "0.8" },
           { "id": 79, "text": "User checks metrics on Google Analytics", "value": "0.8" },
@@ -642,101 +422,57 @@
       "suggestions": [
         {
           "id": 26,
-          "title": "Draft Project Report",
-          "description": "Begin drafting a comprehensive report detailing project progress and insights.",
+          "title": "Cohort Analysis Module",
+          "description": "I coded a Python script segmenting users by acquisition cohort and exporting retention decay and lifetime value charts directly into your Tableau dashboard under a new 'Cohorts' sheet.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Drafting your report will organize your analysis effectively."
-            },
-            {
-              "role": "user",
-              "message": "What key points should I include?"
-            },
-            {
-              "role": "assistant",
-              "message": "Include data trends, client insights, and actionable recommendations."
-            }
+            { "role": "assistant", "message": "Cohort sheet live—review?" },
+            { "role": "user", "message": "Open and color‑code by channel." },
+            { "role": "assistant", "message": "Channel colors applied." }
           ]
         },
         {
           "id": 27,
-          "title": "Monitor Key Metrics",
-          "description": "Regularly review performance indicators to gauge project success.",
+          "title": "Executive Summary Slide",
+          "description": "I condensed findings into a single branded slide with three bullet insights and a stacked bar chart, following client style guidelines to ensure quick leadership consumption.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Key metrics provide a clear picture of project health."
-            },
-            {
-              "role": "user",
-              "message": "Which metrics are most vital?"
-            },
-            {
-              "role": "assistant",
-              "message": "Focus on growth, engagement, and ROI figures."
-            }
+            { "role": "assistant", "message": "Slide inserted at position 2—looks good?" },
+            { "role": "user", "message": "Move to position 1." },
+            { "role": "assistant", "message": "Moved to opening slot." }
           ]
         },
         {
           "id": 28,
-          "title": "Create Data Visuals",
-          "description": "Design engaging charts and graphs to represent your findings effectively.",
+          "title": "Data Lineage Audit",
+          "description": "Using Great Expectations logs, I visualized metric lineage from raw source to dashboard, flagging two undocumented joins now highlighted in red for your review.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Visuals simplify complex data for stakeholders."
-            },
-            {
-              "role": "user",
-              "message": "Which visuals work best?"
-            },
-            {
-              "role": "assistant",
-              "message": "Bar charts, line graphs, and scatter plots are very effective."
-            }
+            { "role": "assistant", "message": "Lineage diagram published—open now?" },
+            { "role": "user", "message": "Open and comment on the joins." },
+            { "role": "assistant", "message": "Comments added next to each flagged join." }
           ]
         },
         {
           "id": 29,
-          "title": "Benchmark Against Competitors",
-          "description": "Compare your project metrics against industry standards to find improvement areas.",
+          "title": "What‑If Forecast Scenarios",
+          "description": "I added interactive sliders for price, churn, and CAC in your spreadsheet to model upside and downside projections, locking formulas to maintain integrity.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Benchmarking helps you understand your market position."
-            },
-            {
-              "role": "user",
-              "message": "What data should I compare?"
-            },
-            {
-              "role": "assistant",
-              "message": "Compare market share, growth rates, and customer feedback."
-            }
+            { "role": "assistant", "message": "Scenarios ready—need a sensitivity tornado chart?" },
+            { "role": "user", "message": "Yes, add beneath sliders." },
+            { "role": "assistant", "message": "Chart created and linked." }
           ]
         },
         {
           "id": 30,
-          "title": "Discuss Findings",
-          "description": "Share your analysis with your team for feedback and further strategy refinement.",
+          "title": "Stakeholder Question Bank",
+          "description": "I compiled 13 anticipated stakeholder questions (now including ESG impact) with concise, approved answers so you can anticipate and handle tough queries smoothly.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Discussing your findings can lead to innovative strategies."
-            },
-            {
-              "role": "user",
-              "message": "How should I present the data?"
-            },
-            {
-              "role": "assistant",
-              "message": "Prepare a summary with interactive visuals for the discussion."
-            }
+            { "role": "assistant", "message": "Question bank saved—share to project folder?" },
+            { "role": "user", "message": "Share and set edit rights to owners only." },
+            { "role": "assistant", "message": "Shared with restricted edits." }
           ]
         }
       ]
     },
+  
     "15": {
       "activity": "Finalizing documents and strategizing for client work",
       "carousel": [
@@ -752,7 +488,7 @@
           { "id": 97, "text": "User checks emails on Outlook", "value": "0.8" },
           { "id": 98, "text": "User summarizes in OneNote", "value": "0.8" },
           { "id": 99, "text": "User archives files in Drive", "value": "0.8" },
-          { "id": 100, "text": "User cross-checks stats in CRM", "value": "0.9" }
+          { "id": 100, "text": "User cross‑checks stats in CRM", "value": "0.9" }
         ],
         [
           { "id": 101, "text": "User analyzes feedback on Slack", "value": "0.8" },
@@ -765,101 +501,57 @@
       "suggestions": [
         {
           "id": 31,
-          "title": "Polish Presentation Deck",
-          "description": "Refine your client presentation deck with updated visuals and data.",
+          "title": "Apply Brand Style Guide",
+          "description": "I ran a consistency audit across 42 slides, updating fonts, colors, and icons to match the client’s brand guide while leaving the analyst appendix untouched for technical depth.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Enhancing your deck can create a strong impression."
-            },
-            {
-              "role": "user",
-              "message": "Which updates should I focus on?"
-            },
-            {
-              "role": "assistant",
-              "message": "Update visuals, streamline data, and highlight key messages."
-            }
+            { "role": "assistant", "message": "Audit complete—visual uniformity improved 100 %." },
+            { "role": "user", "message": "Export a PDF comp to review." },
+            { "role": "assistant", "message": "PDF exported and placed in /Deck/Review." }
           ]
         },
         {
           "id": 32,
-          "title": "Review Remaining Tasks",
-          "description": "Ensure all pending tasks are completed and documented.",
+          "title": "Transform Tables into Infographics",
+          "description": "I replaced dense KPI tables with icon‑grid infographics and added hover tooltips retaining exact figures to improve readability without sacrificing precision.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Reviewing tasks ensures nothing critical is overlooked."
-            },
-            {
-              "role": "user",
-              "message": "How can I be sure nothing is missed?"
-            },
-            {
-              "role": "assistant",
-              "message": "Cross-check task lists across your project tools."
-            }
+            { "role": "assistant", "message": "Infographics inserted—want print‑safe colors?" },
+            { "role": "user", "message": "Yes, convert to CMYK palette." },
+            { "role": "assistant", "message": "Palette converted." }
           ]
         },
         {
           "id": 33,
-          "title": "Update Strategic Plans",
-          "description": "Revise your strategy based on the day's insights and data.",
+          "title": "Compose Executive Cover Email",
+          "description": "I drafted a 120‑word cover email summarizing deliverables, adjusted the tone to be conversational yet professional, and attached the final documents for seamless sending.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Updating your strategy can keep you agile."
-            },
-            {
-              "role": "user",
-              "message": "What aspects need revisiting?"
-            },
-            {
-              "role": "assistant",
-              "message": "Incorporate recent data trends and client feedback."
-            }
+            { "role": "assistant", "message": "Email draft in Outlook—review?" },
+            { "role": "user", "message": "Insert a quick thank‑you note at the end." },
+            { "role": "assistant", "message": "Thank‑you line added." }
           ]
         },
         {
           "id": 34,
-          "title": "Summarize Key Findings",
-          "description": "Prepare a concise summary of the day's insights and outcomes.",
+          "title": "Red‑Team Gap Review",
+          "description": "I invited Alex for a red‑team pass to critique blind spots and scheduled a 3:30 PM reminder; feedback will be logged as tracked changes so edits are transparent.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "A summary consolidates your day's accomplishments."
-            },
-            {
-              "role": "user",
-              "message": "Which details are most important?"
-            },
-            {
-              "role": "assistant",
-              "message": "Highlight main achievements, challenges, and data insights."
-            }
+            { "role": "assistant", "message": "Invitation accepted—expect comments by 3 PM." },
+            { "role": "user", "message": "Great; set notification on first comment." },
+            { "role": "assistant", "message": "Notification enabled for first edit." }
           ]
         },
         {
           "id": 35,
-          "title": "Gather Team Input",
-          "description": "Collect feedback from your team to refine upcoming actions.",
+          "title": "Version Control Snapshot",
+          "description": "I tagged the draft as v1.3 in SharePoint, preserved a read‑only checkpoint, and logged the snapshot in the change log for future reference.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Team input is invaluable for strategy refinement."
-            },
-            {
-              "role": "user",
-              "message": "How should I collect effective feedback?"
-            },
-            {
-              "role": "assistant",
-              "message": "Use a quick survey or a focused discussion during a meeting."
-            }
+            { "role": "assistant", "message": "Snapshot saved—link copied to clipboard." },
+            { "role": "user", "message": "Paste link in Slack channel." },
+            { "role": "assistant", "message": "Link posted to #client‑deck." }
           ]
         }
       ]
     },
+  
     "16": {
       "activity": "Wrapping up work and consolidating reports for the day",
       "carousel": [
@@ -882,107 +574,63 @@
           { "id": 117, "text": "User documents workflow in Confluence", "value": "0.8" },
           { "id": 118, "text": "User reviews feedback on CRM", "value": "0.8" },
           { "id": 119, "text": "User schedules reminders in Outlook", "value": "0.8" },
-          { "id": 120, "text": "User cross-checks updates with team", "value": "0.8" }
+          { "id": 120, "text": "User cross‑checks updates with team", "value": "0.8" }
         ]
       ],
       "suggestions": [
         {
           "id": 36,
-          "title": "Complete End-of-Day Report",
-          "description": "Compile a comprehensive report summarizing today's accomplishments.",
+          "title": "Archive Final Assets",
+          "description": "I created a date‑stamped archive folder (2025‑04‑19) in Drive, copied 17 key deliverables, and verified checksum integrity to ensure safe storage before tomorrow’s cycle begins.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "An end-of-day report ensures smooth transitions for tomorrow."
-            },
-            {
-              "role": "user",
-              "message": "What should the report include?"
-            },
-            {
-              "role": "assistant",
-              "message": "Include completed tasks, encountered challenges, and key insights."
-            }
+            { "role": "assistant", "message": "Archive complete—checksum validation passed." },
+            { "role": "user", "message": "Delete local temp files." },
+            { "role": "assistant", "message": "Temp files removed." }
           ]
         },
         {
           "id": 37,
-          "title": "Backup Documents",
-          "description": "Ensure all critical documents are saved and organized securely.",
+          "title": "Push Metrics Slack Bot",
+          "description": "The KPI bot is scheduled to post a summary with line‑charts at 6 : 05 PM in #analytics, including a link to underlying data for transparency.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Backing up documents is crucial for data security."
-            },
-            {
-              "role": "user",
-              "message": "Which files should be prioritized?"
-            },
-            {
-              "role": "assistant",
-              "message": "Focus on recent reports, presentations, and client communications."
-            }
+            { "role": "assistant", "message": "Bot queued—preview message?" },
+            { "role": "user", "message": "Preview please." },
+            { "role": "assistant", "message": "Preview sent via DM." }
           ]
         },
         {
           "id": 38,
-          "title": "Send Team Update",
-          "description": "Share a summary of today's progress and next steps with your team.",
+          "title": "Tag Lessons Learned",
+          "description": "I drafted a Confluence page titled 'Sprint 14 – Day 3 LL', tagged #latency, #client‑comms, and #risk‑model, and included a quick‑read summary table for future retros.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "A team update will keep everyone aligned."
-            },
-            {
-              "role": "user",
-              "message": "What details are key?"
-            },
-            {
-              "role": "assistant",
-              "message": "Highlight accomplishments, pending tasks, and upcoming deadlines."
-            }
+            { "role": "assistant", "message": "Page published—want to notify the squad?" },
+            { "role": "user", "message": "Yes, post link in #retrospective." },
+            { "role": "assistant", "message": "Link posted." }
           ]
         },
         {
           "id": 39,
-          "title": "Review Completed Tasks",
-          "description": "Verify that all tasks are documented and marked complete.",
+          "title": "Update Sprint Burndown",
+          "description": "I updated burndown chart to 62 % completion, attached a screenshot, and @mentioned the team in Jira so everyone sees real‑time progress.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Reviewing completed tasks ensures nothing is overlooked."
-            },
-            {
-              "role": "user",
-              "message": "How should I cross-check?"
-            },
-            {
-              "role": "assistant",
-              "message": "Use your task management app and email confirmations to verify."
-            }
+            { "role": "assistant", "message": "Screenshot posted—team acknowledged." },
+            { "role": "user", "message": "Good, move ticket XYZ‑123 to 'Done'." },
+            { "role": "assistant", "message": "Ticket moved and closed." }
           ]
         },
         {
           "id": 40,
-          "title": "Set Next Day Agenda",
-          "description": "Outline the urgent tasks and priorities for tomorrow.",
+          "title": "Configure Auto‑Responder",
+          "description": "An after‑hours auto‑reply is set to activate at 6 PM, indicating responses resume at 8 AM and providing an escalation contact for urgent matters.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Planning tomorrow's agenda now creates a head start."
-            },
-            {
-              "role": "user",
-              "message": "What should be prioritized?"
-            },
-            {
-              "role": "assistant",
-              "message": "Focus on urgent follow-ups and high-impact projects."
-            }
+            { "role": "assistant", "message": "Auto‑responder enabled for tonight." },
+            { "role": "user", "message": "Add a link to FAQ page." },
+            { "role": "assistant", "message": "FAQ link added to message body." }
           ]
         }
       ]
     },
+  
     "17": {
       "activity": "Concluding the workday and sending final communications",
       "carousel": [
@@ -990,11 +638,11 @@
           { "id": 121, "text": "User reviews emails on Outlook", "value": "0.8" },
           { "id": 122, "text": "User organizes files on Drive", "value": "0.8" },
           { "id": 123, "text": "User logs tasks in CRM", "value": "0.8" },
-          { "id": 124, "text": "User checks end-of-day data on Slack", "value": "0.8" },
+          { "id": 124, "text": "User checks end‑of‑day data on Slack", "value": "0.8" },
           { "id": 125, "text": "User finalizes reports on Trello", "value": "0.8" }
         ],
         [
-          { "id": 126, "text": "User sends wrap-up emails", "value": "0.8" },
+          { "id": 126, "text": "User sends wrap‑up emails", "value": "0.8" },
           { "id": 127, "text": "User updates status in Asana", "value": "0.8" },
           { "id": 128, "text": "User reviews daily summaries", "value": "0.8" },
           { "id": 129, "text": "User archives docs on SharePoint", "value": "0.8" },
@@ -1002,7 +650,7 @@
         ],
         [
           { "id": 131, "text": "User summarizes day’s work online", "value": "0.8" },
-          { "id": 132, "text": "User double-checks team feedback", "value": "0.8" },
+          { "id": 132, "text": "User double‑checks team feedback", "value": "0.8" },
           { "id": 133, "text": "User reviews pending tasks", "value": "0.8" },
           { "id": 134, "text": "User logs client communications", "value": "0.8" },
           { "id": 135, "text": "User prepares exit meeting notes", "value": "0.8" }
@@ -1011,101 +659,57 @@
       "suggestions": [
         {
           "id": 41,
-          "title": "Finish Remaining Tasks",
-          "description": "Ensure all urgent tasks are completed before ending the day.",
+          "title": "Send Gratitude Note",
+          "description": "I compiled contributor names and drafted a three‑line thank‑you email summarizing today’s wins; CC’d the project manager to foster visibility and morale.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Finishing your remaining tasks will keep projects on track."
-            },
-            {
-              "role": "user",
-              "message": "Which tasks need the most focus?"
-            },
-            {
-              "role": "assistant",
-              "message": "Prioritize those with imminent deadlines and client deliverables."
-            }
+            { "role": "assistant", "message": "Email ready—send now?" },
+            { "role": "user", "message": "Send and log in CRM." },
+            { "role": "assistant", "message": "Email sent and logged." }
           ]
         },
         {
           "id": 42,
-          "title": "Send Final Emails",
-          "description": "Dispatch all final communications and summaries to your team.",
+          "title": "Run EOD Checklist Script",
+          "description": "A pre‑built script verifies backups, commits code, and locks tickets; dry‑run passed with zero errors, standing by for full execution.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Final emails ensure everyone is informed of the day's outcomes."
-            },
-            {
-              "role": "user",
-              "message": "Who should receive these emails?"
-            },
-            {
-              "role": "assistant",
-              "message": "Send them to your team and key stakeholders."
-            }
+            { "role": "assistant", "message": "Ready to execute full script." },
+            { "role": "user", "message": "Execute and post summary." },
+            { "role": "assistant", "message": "Script executed; summary posted to #dev‑ops." }
           ]
         },
         {
           "id": 43,
-          "title": "Log Daily Achievements",
-          "description": "Document your accomplishments and challenges of the day.",
+          "title": "Plan Morning Stand‑Up",
+          "description": "I drafted tomorrow’s stand‑up agenda with rolled‑over blockers and pinned it in Slack, ensuring smooth kickoff without context switching.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Logging achievements helps track progress over time."
-            },
-            {
-              "role": "user",
-              "message": "How detailed should the log be?"
-            },
-            {
-              "role": "assistant",
-              "message": "Include highlights, challenges, and lessons learned."
-            }
+            { "role": "assistant", "message": "Agenda pinned—notify stakeholders?" },
+            { "role": "user", "message": "Yes, @channel." },
+            { "role": "assistant", "message": "@channel notification sent." }
           ]
         },
         {
           "id": 44,
-          "title": "Organize Work Files",
-          "description": "Sort and archive work files to maintain an organized workspace.",
+          "title": "Clean Desktop Folders",
+          "description": "I sorted 37 loose files into weekly bins, moved screenshots to the 'Images' folder, and left a shortcut on your desktop to the tidy archive.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Organizing your files improves efficiency and retrieval."
-            },
-            {
-              "role": "user",
-              "message": "What method do you suggest?"
-            },
-            {
-              "role": "assistant",
-              "message": "Use structured folders and consistent naming conventions."
-            }
+            { "role": "assistant", "message": "Cleanup done—desktop decluttered." },
+            { "role": "user", "message": "Great, empty trash." },
+            { "role": "assistant", "message": "Trash emptied." }
           ]
         },
         {
           "id": 45,
-          "title": "Prepare for Tomorrow",
-          "description": "Outline the next day's urgent tasks and priorities for a smooth start.",
+          "title": "Review Focus Stats",
+          "description": "I analyzed today’s RescueTime report showing 62 % focus time and highlighted top distractions (social media 23 min) with actionable recommendations to improve tomorrow.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "A prepared plan for tomorrow sets you up for success."
-            },
-            {
-              "role": "user",
-              "message": "What should I prioritize?"
-            },
-            {
-              "role": "assistant",
-              "message": "Focus on upcoming deadlines and critical follow-ups."
-            }
+            { "role": "assistant", "message": "Insights ready—want them in an email or Slack?" },
+            { "role": "user", "message": "Slack DM." },
+            { "role": "assistant", "message": "DM sent with recommendations." }
           ]
         }
       ]
     },
+  
     "18": {
       "activity": "Relaxing at home while catching up on news and social media",
       "carousel": [
@@ -1134,101 +738,57 @@
       "suggestions": [
         {
           "id": 46,
-          "title": "Stream Evening Shows",
-          "description": "Relax by watching your favorite shows and movies on your preferred platform.",
+          "title": "Curate Personalized News Digest",
+          "description": "I assembled a five‑story digest blending finance, tech, and leisure topics tailored to your interests and emailed it to you; future digests will auto‑deliver nightly unless paused.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Evening streaming is a great way to unwind."
-            },
-            {
-              "role": "user",
-              "message": "What shows would you recommend?"
-            },
-            {
-              "role": "assistant",
-              "message": "Mix dramas and comedies for a balanced viewing experience."
-            }
+            { "role": "assistant", "message": "Digest sent—want push notification on arrival?" },
+            { "role": "user", "message": "No push for now." },
+            { "role": "assistant", "message": "Push disabled; digest will remain email‑only." }
           ]
         },
         {
           "id": 47,
-          "title": "Read Leisure News",
-          "description": "Catch up on non-work related news from trusted lifestyle outlets.",
+          "title": "Set Screen‑Time Reminder",
+          "description": "I activated a gentle alert on iOS to ping after 45 minutes of continuous scrolling so you can take breaks and prevent doom‑scroll fatigue.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Leisure news updates can offer a refreshing break."
-            },
-            {
-              "role": "user",
-              "message": "Which outlets have quality news?"
-            },
-            {
-              "role": "assistant",
-              "message": "Explore lifestyle and entertainment sections for engaging stories."
-            }
+            { "role": "assistant", "message": "Reminder set—start timer at 7 PM." },
+            { "role": "user", "message": "Great." },
+            { "role": "assistant", "message": "Timer armed." }
           ]
         },
         {
           "id": 48,
-          "title": "Engage on Social Platforms",
-          "description": "Interact on social media by posting updates and commenting on posts.",
+          "title": "20‑Minute Mobility Routine",
+          "description": "I queued a guided stretch video targeting desk posture and cast it to your TV, scheduling it at 7 : 30 PM to loosen up before dinner.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Engaging on social media boosts your online presence."
-            },
-            {
-              "role": "user",
-              "message": "How can I increase engagement?"
-            },
-            {
-              "role": "assistant",
-              "message": "Share interesting posts and actively respond to comments."
-            }
+            { "role": "assistant", "message": "Video queued—adjust volume?" },
+            { "role": "user", "message": "Set to 40 %." },
+            { "role": "assistant", "message": "Volume set." }
           ]
         },
         {
           "id": 49,
-          "title": "Pursue Hobbies",
-          "description": "Spend time on creative projects or hobbies that inspire you.",
+          "title": "Discover New Spotify Playlist",
+          "description": "A custom playlist mixing chillhop and indie tracks named 'Evening Wind‑Down' is created and added to your library for background ambiance.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Dedicating time to hobbies nurtures your creativity."
-            },
-            {
-              "role": "user",
-              "message": "What hobbies should I explore?"
-            },
-            {
-              "role": "assistant",
-              "message": "Consider DIY projects, painting, or creative writing."
-            }
+            { "role": "assistant", "message": "Playlist ready—shuffle on?" },
+            { "role": "user", "message": "Shuffle yes." },
+            { "role": "assistant", "message": "Shuffle enabled." }
           ]
         },
         {
           "id": 50,
-          "title": "Plan a Relaxing Dinner",
-          "description": "Decide on a meal plan that balances taste and nutrition for a relaxed evening.",
+          "title": "Batch Reply Personal Messages",
+          "description": "I set a 15‑minute timer to process WhatsApp and Instagram DMs in one focused batch, prompting you at 7 : 30 PM so replies don’t interrupt relaxation.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Planning dinner can set the tone for a pleasant evening."
-            },
-            {
-              "role": "user",
-              "message": "What meal options are ideal?"
-            },
-            {
-              "role": "assistant",
-              "message": "Choose a healthy, light dish or opt for a nutritious takeout."
-            }
+            { "role": "assistant", "message": "Timer scheduled—cancel anytime with 'stop batch'." },
+            { "role": "user", "message": "All good." },
+            { "role": "assistant", "message": "Batch reply session armed." }
           ]
         }
       ]
     },
+  
     "19": {
       "activity": "Preparing dinner and connecting with family",
       "carousel": [
@@ -1257,101 +817,57 @@
       "suggestions": [
         {
           "id": 51,
-          "title": "Try New Recipes",
-          "description": "Experiment with a new dinner recipe to add variety to your meals.",
+          "title": "Macro‑Balanced Meal Prep",
+          "description": "I created a two‑day dinner menu meeting a 40‑30‑30 macro ratio, substituting quinoa for rice, and generated a nutritional summary that syncs to MyFitnessPal.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Trying a new recipe can revitalize your dinner routine."
-            },
-            {
-              "role": "user",
-              "message": "What cuisine should I explore?"
-            },
-            {
-              "role": "assistant",
-              "message": "Consider Mediterranean dishes for a healthy twist."
-            }
+            { "role": "assistant", "message": "Menu updated—push to MyFitnessPal?" },
+            { "role": "user", "message": "Push." },
+            { "role": "assistant", "message": "Synced." }
           ]
         },
         {
           "id": 52,
-          "title": "Review Grocery Needs",
-          "description": "Update your grocery list and plan your shopping for the week.",
+          "title": "Shared Family Shopping Board",
+          "description": "A collaborative Google Keep grocery list synced to Instacart is live, pre‑filled with staples plus avocados and oat milk so everyone can add items in real‑time.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "A current grocery list ensures you're always stocked."
-            },
-            {
-              "role": "user",
-              "message": "Any tips on organizing it?"
-            },
-            {
-              "role": "assistant",
-              "message": "Use a mobile app to track essentials and find local deals."
-            }
+            { "role": "assistant", "message": "List shared—notify family group chat?" },
+            { "role": "user", "message": "Yes, notify." },
+            { "role": "assistant", "message": "Notification sent." }
           ]
         },
         {
           "id": 53,
-          "title": "Plan Family Outing",
-          "description": "Discuss and schedule a family activity or outing for the weekend.",
+          "title": "Collaborative Recipe Book",
+          "description": "I spun up a Notion database for favorite recipes and imported tonight’s meal with photo, cooking time, and macros, enabling star ratings for future favorites.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Planning a family outing can create lasting memories."
-            },
-            {
-              "role": "user",
-              "message": "What activities work best?"
-            },
-            {
-              "role": "assistant",
-              "message": "Consider a picnic, museum visit, or local park outing."
-            }
+            { "role": "assistant", "message": "Recipe added—want to add tags?" },
+            { "role": "user", "message": "Tag Mediterranean." },
+            { "role": "assistant", "message": "Tag applied." }
           ]
         },
         {
           "id": 54,
-          "title": "Organize Home Chores",
-          "description": "List and schedule household tasks to maintain an orderly home.",
+          "title": "Table‑Topic Cards",
+          "description": "Ten conversation prompt cards, including a new space exploration trivia, are generated and ready to display on your phone so dinner chat stays engaging.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Organizing chores helps manage your household efficiently."
-            },
-            {
-              "role": "user",
-              "message": "How do I prioritize these tasks?"
-            },
-            {
-              "role": "assistant",
-              "message": "Divide tasks into daily and weekly lists for balance."
-            }
+            { "role": "assistant", "message": "Cards ready—open deck?" },
+            { "role": "user", "message": "Open." },
+            { "role": "assistant", "message": "Deck displayed." }
           ]
         },
         {
           "id": 55,
-          "title": "Watch a Family Movie",
-          "description": "Select a movie for a relaxing family viewing experience tonight.",
+          "title": "Smart Speaker Cooking Timers",
+          "description": "Alexa routines now start staggered timers for quinoa (25 min), salmon (12 min), and veggies (8 min) once you say 'begin cook', ensuring perfect timing.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "A family movie can help everyone unwind together."
-            },
-            {
-              "role": "user",
-              "message": "Which genre works best?"
-            },
-            {
-              "role": "assistant",
-              "message": "Opt for a light-hearted comedy or adventure film."
-            }
+            { "role": "assistant", "message": "Routine awaits your 'begin cook' command." },
+            { "role": "user", "message": "Good." },
+            { "role": "assistant", "message": "Standing by." }
           ]
         }
       ]
     },
+  
     "20": {
       "activity": "Engaging in leisure reading and pursuing personal hobbies",
       "carousel": [
@@ -1380,101 +896,57 @@
       "suggestions": [
         {
           "id": 56,
-          "title": "Read a New Book",
-          "description": "Dedicate time to a captivating book or article to spark creativity.",
+          "title": "Join Live Author Q&A",
+          "description": "I registered you for tonight’s 8 PM virtual Q&A with your favorite historian and synced the link to your calendar so you can ask questions directly.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Reading can open new perspectives and ideas."
-            },
-            {
-              "role": "user",
-              "message": "Which genres should I explore?"
-            },
-            {
-              "role": "assistant",
-              "message": "Consider fiction, non-fiction, or industry-related topics."
-            }
+            { "role": "assistant", "message": "Registration confirmed—reminder set for 7:55 PM." },
+            { "role": "user", "message": "Great, add a question placeholder: 'economic impacts of revolutions'." },
+            { "role": "assistant", "message": "Placeholder question added." }
           ]
         },
         {
           "id": 57,
-          "title": "Start a DIY Project",
-          "description": "Begin a creative DIY project to express your artistic side.",
+          "title": "30‑Day Sketch Challenge",
+          "description": "I kicked off a 30‑day sketch challenge in Procreate with daily prompts and set a 7 PM reminder so your drawing habit builds consistently.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "A DIY project can fuel your creative energy."
-            },
-            {
-              "role": "user",
-              "message": "What project might be suitable?"
-            },
-            {
-              "role": "assistant",
-              "message": "Consider a home decor project or a custom art piece."
-            }
+            { "role": "assistant", "message": "Prompt 1 'urban skyline' ready—open Procreate?" },
+            { "role": "user", "message": "Open later." },
+            { "role": "assistant", "message": "Understood—reminder will pop at 7 PM." }
           ]
         },
         {
           "id": 58,
-          "title": "Join a Virtual Club",
-          "description": "Engage with peers in a virtual book or hobby club to share interests.",
+          "title": "Digitize Book Highlights",
+          "description": "I parsed your Kindle clippings, exported them to Roam, and auto‑tagged themes like #philosophy and #strategy for easy retrieval during writing sessions.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Joining a virtual club can expand your network."
-            },
-            {
-              "role": "user",
-              "message": "How do I find one?"
-            },
-            {
-              "role": "assistant",
-              "message": "Search online communities that match your interests."
-            }
+            { "role": "assistant", "message": "Highlights imported—open Roam page?" },
+            { "role": "user", "message": "Open now." },
+            { "role": "assistant", "message": "Page opened in browser." }
           ]
         },
         {
           "id": 59,
-          "title": "Watch Tutorial Videos",
-          "description": "Learn something new by watching detailed tutorials on your favorite subjects.",
+          "title": "Publish Micro‑Blog Reflection",
+          "description": "A 150‑word Medium draft summarizing today’s key insight is ready and scheduled for 9 PM to keep your audience engaged with fresh content.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Tutorial videos are a great way to build new skills."
-            },
-            {
-              "role": "user",
-              "message": "Which topics are trending?"
-            },
-            {
-              "role": "assistant",
-              "message": "Try creative tutorials on YouTube or Vimeo for inspiration."
-            }
+            { "role": "assistant", "message": "Draft scheduled—want cross‑post to LinkedIn?" },
+            { "role": "user", "message": "Yes, cross‑post." },
+            { "role": "assistant", "message": "LinkedIn post scheduled." }
           ]
         },
         {
           "id": 60,
-          "title": "Journal Your Thoughts",
-          "description": "Reflect on your day by writing down ideas and insights in your journal.",
+          "title": "Pomodoro Hobby Practice",
+          "description": "I configured a 25/5 Pomodoro timer sequence for guitar practice starting at 7 : 15 PM with audio cues, helping you progress without burnout.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Journaling can boost self-awareness and creativity."
-            },
-            {
-              "role": "user",
-              "message": "Any tips for effective journaling?"
-            },
-            {
-              "role": "assistant",
-              "message": "Keep it simple—note key thoughts and reflections regularly."
-            }
+            { "role": "assistant", "message": "Sequence programmed—ready to start at 7 : 15." },
+            { "role": "user", "message": "All set." },
+            { "role": "assistant", "message": "Timer will begin on schedule." }
           ]
         }
       ]
     },
+  
     "21": {
       "activity": "Winding down, reflecting on the day, and planning for tomorrow",
       "carousel": [
@@ -1488,12 +960,12 @@
         [
           { "id": 186, "text": "User sets goals in digital journals", "value": "0.8" },
           { "id": 187, "text": "User reflects via Evernote notes", "value": "0.8" },
-          { "id": 188, "text": "User monitors health on Apple Watch", "value": "0.8" },
+          { "id": 188, "text": "User monitors health on Apple Watch", "value": "0.8" },
           { "id": 189, "text": "User studies tomorrow's agenda", "value": "0.8" },
           { "id": 190, "text": "User plans next day in Notion", "value": "0.8" }
         ],
         [
-          { "id": 191, "text": "User logs reflections on Day One", "value": "0.8" },
+          { "id": 191, "text": "User logs reflections on Day One", "value": "0.8" },
           { "id": 192, "text": "User uses Headspace for calm", "value": "0.8" },
           { "id": 193, "text": "User reads inspirational quotes", "value": "0.8" },
           { "id": 194, "text": "User reviews personal achievements", "value": "0.8" },
@@ -1503,97 +975,52 @@
       "suggestions": [
         {
           "id": 61,
-          "title": "Journal Daily Reflections",
-          "description": "Write down your achievements and lessons learned today in detail.",
+          "title": "Gratitude List Ritual",
+          "description": "I inserted a three‑item gratitude template into Day One with example entries, prompting you to foster positivity before sleep.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Journaling your reflections can set a positive tone for tomorrow."
-            },
-            {
-              "role": "user",
-              "message": "What details should I note?"
-            },
-            {
-              "role": "assistant",
-              "message": "Focus on accomplishments, challenges, and key takeaways."
-            }
+            { "role": "assistant", "message": "Template ready—start writing?" },
+            { "role": "user", "message": "Yes." },
+            { "role": "assistant", "message": "Writing interface opened." }
           ]
         },
         {
           "id": 62,
-          "title": "Plan Tomorrow's Goals",
-          "description": "Outline your key priorities and tasks for the next day for a smooth start.",
+          "title": "Box Breathing Wind‑Down",
+          "description": "A four‑minute guided box‑breathing audio is queued in Headspace, set to auto‑lower device volume and activate DND for uninterrupted relaxation.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Planning tomorrow helps in managing your time effectively."
-            },
-            {
-              "role": "user",
-              "message": "How detailed should my plan be?"
-            },
-            {
-              "role": "assistant",
-              "message": "Include major tasks, deadlines, and areas needing focus."
-            }
+            { "role": "assistant", "message": "Audio queued—play now?" },
+            { "role": "user", "message": "Play." },
+            { "role": "assistant", "message": "Playing with volume at 20 %." }
           ]
         },
         {
           "id": 63,
-          "title": "Practice Meditation",
-          "description": "Spend a few minutes meditating to relax and clear your mind before sleep.",
+          "title": "Set Sleep‑Tracking Goal",
+          "description": "Bedtime is scheduled for 11 PM with a smart alarm at 6 : 40 AM, targeting 7 h 30 m sleep, and sleep‑tracking enabled on your Fitbit.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Meditation can significantly reduce stress at day's end."
-            },
-            {
-              "role": "user",
-              "message": "Which method should I try?"
-            },
-            {
-              "role": "assistant",
-              "message": "Guided meditations on apps like Headspace can be very effective."
-            }
+            { "role": "assistant", "message": "Sleep goal pinned—adjust alarm window?" },
+            { "role": "user", "message": "Keep as is." },
+            { "role": "assistant", "message": "Settings saved." }
           ]
         },
         {
           "id": 64,
-          "title": "Read for Leisure",
-          "description": "Enjoy a calming book or an inspirational article to wind down.",
+          "title": "Queue Morning Playlist",
+          "description": "An upbeat Spotify playlist fades in at alarm time to energize your morning routine, integrated with smart lights that brighten gradually.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "Reading light content can help transition you to rest."
-            },
-            {
-              "role": "user",
-              "message": "What type of reading works best at night?"
-            },
-            {
-              "role": "assistant",
-              "message": "Try motivational or soothing literature to relax your mind."
-            }
+            { "role": "assistant", "message": "Playlist and lights scheduled—test fade?" },
+            { "role": "user", "message": "No test needed." },
+            { "role": "assistant", "message": "Alright; will trigger tomorrow." }
           ]
         },
         {
           "id": 65,
-          "title": "Unplug and Recharge",
-          "description": "Turn off your devices for at least 30 minutes to allow your mind to rest.",
+          "title": "Weather and Commute Check",
+          "description": "I fetched tomorrow’s forecast (55–72 °F, light rain) and traffic (32 min commute) and suggested attire (light waterproof jacket), emailing you the summary for reference.",
           "chats": [
-            {
-              "role": "assistant",
-              "message": "A digital detox before sleep can improve your sleep quality."
-            },
-            {
-              "role": "user",
-              "message": "How long should I unplug?"
-            },
-            {
-              "role": "assistant",
-              "message": "Try to disconnect for at least 30 minutes before bedtime."
-            }
+            { "role": "assistant", "message": "Summary emailed—want calendar note?" },
+            { "role": "user", "message": "Add note at 7 AM." },
+            { "role": "assistant", "message": "Calendar note added." }
           ]
         }
       ]
