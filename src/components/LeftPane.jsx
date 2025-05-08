@@ -135,14 +135,7 @@ const LeftPane = ({ selectedHour, onTimeChange, activity }) => {
         textAlign: 'center'
       }}
     >
-      {/* TIMER SELECTOR SECTION */}
-      <div style={{ width: '200px', margin: '0 auto' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-          <span style={{ fontSize: '14px' }}>Start</span>
-          <FancySlider min={9} max={21} step={1} value={selectedHour} onChange={onTimeChange} />
-          <span style={{ fontSize: '14px' }}>End</span>
-        </div>
-      </div>
+
       {/* ACTIVITY SHOWCASE SECTION */}
       <div>
         <div
@@ -162,6 +155,14 @@ const LeftPane = ({ selectedHour, onTimeChange, activity }) => {
         <p style={{ margin: '5px 0 10px 0', fontSize: '16px' }}>
           The user is <b>{activity.charAt(0).toLowerCase() + activity.slice(1)}</b>
         </p>
+      </div>
+      {/* TIMER SELECTOR SECTION */}
+      <div style={{ width: '200px', margin: '0 auto' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+          <span style={{ fontSize: '14px' }}>Start</span>
+          <FancySlider min={9} max={21} step={1} value={selectedHour} onChange={onTimeChange} />
+          <span style={{ fontSize: '14px' }}>End</span>
+        </div>
       </div>
 
     </div>
