@@ -1,0 +1,1029 @@
+{
+    "9": {
+      "activity": "Reviewing emails and setting daily priorities",
+      "carousel": [
+        [
+          { "id": 1, "text": "User uses Bloomberg Terminal daily", "value": "0.8" },
+          { "id": 2, "text": "User leverages Reuters for headlines", "value": "0.9" },
+          { "id": 3, "text": "User reads WSJ in the morning", "value": "0.8" },
+          { "id": 4, "text": "User scans CNBC for pre‑market trends", "value": "0.9" },
+          { "id": 5, "text": "User studies FT economic forecasts", "value": "0.9" }
+        ],
+        [
+          { "id": 6, "text": "User checks market emails promptly", "value": "0.8" },
+          { "id": 7, "text": "User sorts overnight messages", "value": "0.8" },
+          { "id": 8, "text": "User flags urgent emails", "value": "0.8" },
+          { "id": 9, "text": "User drafts morning replies", "value": "0.8" },
+          { "id": 10, "text": "User reviews team updates", "value": "0.8" }
+        ],
+        [
+          { "id": 11, "text": "User plans day with calendar apps", "value": "0.8" },
+          { "id": 12, "text": "User organizes tasks in Notion", "value": "0.9" },
+          { "id": 13, "text": "User sets priorities for the day", "value": "0.8" },
+          { "id": 14, "text": "User updates to‑do lists online", "value": "0.9" },
+          { "id": 15, "text": "User reviews morning analytics", "value": "0.8" }
+        ]
+      ],
+      "suggestions": [
+        {
+          "id": 1,
+          "title": "Automate Inbox Triage",
+          "description": "I drafted a rule set that archives newsletters, pins ticker‑related alerts, and auto‑flags leadership mail so your first scan targets decision‑critical messages; activating it will reduce inbox noise by ~35 %.",
+          "chats": [
+            { "role": "assistant", "message": "I've created the rules and staged them for review—ready to deploy?" },
+            { "role": "user", "message": "Will VIP messages still come through instantly?" },
+            { "role": "assistant", "message": "Yes, anything from your VIP list bypasses filters and triggers a Slack ping." }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Two‑Minute Priority Matrix",
+          "description": "Using your overnight email flags and calendar, I generated an Eisenhower matrix and auto‑blocked two 90‑minute focus slots for the urgent‑important quadrant so nothing slips through cracks today.",
+          "chats": [
+            { "role": "assistant", "message": "Matrix is live in Notion—want me to push the focus slots to Outlook now?" },
+            { "role": "user", "message": "Push them but mark as tentative." },
+            { "role": "assistant", "message": "Done—slots appear as tentative and can be moved if conflicts arise." }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Daily Brief Template",
+          "description": "I built a one‑page morning brief that stitches Bloomberg pre‑market moves, flagged mails, and today’s meetings; the doc auto‑refreshes at 8 : 55 AM and lands in your draft folder for quick sharing.",
+          "chats": [
+            { "role": "assistant", "message": "Brief template compiled—preview?" },
+            { "role": "user", "message": "Show me the pre‑market section only." },
+            { "role": "assistant", "message": "Here’s the snippet with S&P futures, treasury yields, and FX heatmap—looks good?" }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Volatility Spike Alert",
+          "description": "I configured Reuters and CNBC feeds to ping Slack only when any watched index moves ±1 % intraday, ensuring you catch anomalies without constant manual refreshing.",
+          "chats": [
+            { "role": "assistant", "message": "Alerts live—threshold set at 1 % with a 15‑minute cool‑down to avoid spam." },
+            { "role": "user", "message": "Can we add VIX > 18 as a trigger?" },
+            { "role": "assistant", "message": "Added—VIX breach will fire a high‑priority notification." }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Pomodoro Focus Session",
+          "description": "I prepared a 25‑minute Pomodoro timer with automatic Do‑Not‑Disturb (Bloomberg audio excluded) and scheduled a 5‑minute stretch reminder so you can power through top tasks without interruption.",
+          "chats": [
+            { "role": "assistant", "message": "Timer primed—start your first Pomodoro now?" },
+            { "role": "user", "message": "Give me five minutes, then start." },
+            { "role": "assistant", "message": "Starting in five; you’ll get a heads‑up ping." }
+          ]
+        }
+      ]
+    },
+  
+    "10": {
+      "activity": "Analyzing market data and preparing analytical reports",
+      "carousel": [
+        [
+          { "id": 16, "text": "User uses Tableau for market data", "value": "0.9" },
+          { "id": 17, "text": "User reviews trading charts on TV", "value": "0.8" },
+          { "id": 18, "text": "User leverages Excel for trend analysis", "value": "0.8" },
+          { "id": 19, "text": "User studies WSJ economic insights", "value": "0.8" },
+          { "id": 20, "text": "User monitors Reuters live feeds", "value": "0.9" }
+        ],
+        [
+          { "id": 21, "text": "User crunches numbers with Python", "value": "0.8" },
+          { "id": 22, "text": "User examines stock indices with R", "value": "0.8" },
+          { "id": 23, "text": "User updates data dashboards promptly", "value": "0.8" },
+          { "id": 24, "text": "User organizes reports in Sheets", "value": "0.8" },
+          { "id": 25, "text": "User refines models using MATLAB", "value": "0.8" }
+        ],
+        [
+          { "id": 26, "text": "User integrates APIs for data feeds", "value": "0.8" },
+          { "id": 27, "text": "User configures alerts via Slack", "value": "0.8" },
+          { "id": 28, "text": "User cross‑checks on Bloomberg", "value": "0.8" },
+          { "id": 29, "text": "User tracks volatility metrics", "value": "0.8" },
+          { "id": 30, "text": "User validates data with Notion", "value": "0.9" }
+        ]
+      ],
+      "suggestions": [
+        {
+          "id": 6,
+          "title": "Embed FedWatch Probabilities",
+          "description": "I integrated CME FedWatch API into Tableau, refreshing every 15 minutes and caching extracts locally so your dashboard now shows live rate‑hike probability curves with negligible latency.",
+          "chats": [
+            { "role": "assistant", "message": "Live FedWatch curves are plotted on the 'Macro' tab—open it?" },
+            { "role": "user", "message": "Open and highlight the next FOMC month." },
+            { "role": "assistant", "message": "Highlighted; change propagates to PDF exports automatically." }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Momentum Strategy Back‑Test",
+          "description": "I spun up a Jupyter notebook that back‑tests a 20/80‑day momentum strategy on your equity shortlist, factoring in 5 bps transaction costs and outputting Sharpe ratios and drawdowns.",
+          "chats": [
+            { "role": "assistant", "message": "Notebook finished—top‑performer Sharpe 1.42. Share the HTML report?" },
+            { "role": "user", "message": "Yes, email me and save in the research folder." },
+            { "role": "assistant", "message": "Report emailed and stored under /Research/Backtests/2025‑04‑19." }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Excel Heatmap Enhancement",
+          "description": "I applied conditional formatting across volume, intraday range %, and 14‑day RSI columns, turning extreme values into red or green gradients and inserting a mini‑chart legend for quick interpretation.",
+          "chats": [
+            { "role": "assistant", "message": "Heatmap live—want me to freeze columns A‑C for easier scroll?" },
+            { "role": "user", "message": "Freeze them and add filter drop‑downs." },
+            { "role": "assistant", "message": "Columns frozen; filters added." }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "One‑Page Client Brief",
+          "description": "I drafted a concise PDF summarizing today’s macro shifts, sector‑specific implications, and plain‑language action points for Client A; a glossary sidebar explains any unavoidable jargon.",
+          "chats": [
+            { "role": "assistant", "message": "PDF stored in Client‑A/Briefs—ready to send?" },
+            { "role": "user", "message": "Add an ESG note, then send." },
+            { "role": "assistant", "message": "ESG note inserted; email scheduled for 11 AM." }
+          ]
+        },
+        {
+          "id": 10,
+          "title": "Stress‑Test Scenarios",
+          "description": "I parameterized three macro scenarios (+100 bps rates, oil >$100, USD‑EUR 10 % swing) and ran them through your risk model, exporting VaR and peak‑to‑trough declines for quick review.",
+          "chats": [
+            { "role": "assistant", "message": "Scenario results ready in Excel—open now?" },
+            { "role": "user", "message": "Open and plot in a clustered bar chart." },
+            { "role": "assistant", "message": "Chart added to the Scenario sheet." }
+          ]
+        }
+      ]
+    },
+  
+    "11": {
+      "activity": "Conducting deep analysis on client portfolios and strategies",
+      "carousel": [
+        [
+          { "id": 31, "text": "User writes Python scripts for risk", "value": "0.8" },
+          { "id": 32, "text": "User reviews portfolios on Morningstar", "value": "0.9" },
+          { "id": 33, "text": "User analyzes earnings on Zacks", "value": "0.8" },
+          { "id": 34, "text": "User studies Bloomberg for insights", "value": "0.8" },
+          { "id": 35, "text": "User inspects trends on Reuters", "value": "0.8" }
+        ],
+        [
+          { "id": 36, "text": "User evaluates investments in Excel", "value": "0.8" },
+          { "id": 37, "text": "User uses R for quantitative tests", "value": "0.8" },
+          { "id": 38, "text": "User monitors shifts on WSJ", "value": "0.8" },
+          { "id": 39, "text": "User checks sentiment on CNBC", "value": "0.8" },
+          { "id": 40, "text": "User cross‑checks data in Notion", "value": "0.8" }
+        ],
+        [
+          { "id": 41, "text": "User models risks using MATLAB", "value": "0.8" },
+          { "id": 42, "text": "User refines strategy with SAS", "value": "0.8" },
+          { "id": 43, "text": "User benchmarks on FT reports", "value": "0.8" },
+          { "id": 44, "text": "User consolidates data in Notion", "value": "0.8" },
+          { "id": 45, "text": "User reviews feedback on Slack", "value": "0.8" }
+        ]
+      ],
+      "suggestions": [
+        {
+          "id": 11,
+          "title": "Factor Exposure Decomposition",
+          "description": "I executed a five‑factor regression for each client portfolio, generating coefficient charts and flagging any beta drift > 0.25 versus benchmark so hidden tilts are surfaced instantly.",
+          "chats": [
+            { "role": "assistant", "message": "Regression output is ready—open the visualization deck?" },
+            { "role": "user", "message": "Open and annotate the drift flags." },
+            { "role": "assistant", "message": "Annotations added as callouts in red." }
+          ]
+        },
+        {
+          "id": 12,
+          "title": "Monte Carlo Stress Simulation",
+          "description": "I ran 10 000 Monte Carlo paths with Student‑t distributions to capture fat tails, exporting 95 % VaR and expected shortfall tables for each portfolio and benchmark.",
+          "chats": [
+            { "role": "assistant", "message": "Simulation complete—want the CSV or interactive dashboard?" },
+            { "role": "user", "message": "Interactive, please." },
+            { "role": "assistant", "message": "Dashboard published to Power BI with drill‑through filters." }
+          ]
+        },
+        {
+          "id": 13,
+          "title": "Narrative Performance Summary",
+          "description": "I crafted a 400‑word story‑driven summary translating quantitative results into client‑friendly language, peppered with sparkline charts and pull quotes for quick digestion.",
+          "chats": [
+            { "role": "assistant", "message": "Draft ready—review now or after lunch?" },
+            { "role": "user", "message": "After lunch; schedule reminder." },
+            { "role": "assistant", "message": "Reminder set for 1 PM." }
+          ]
+        },
+        {
+          "id": 14,
+          "title": "Risk KPI Dashboard Prototype",
+          "description": "I built an interactive Power BI dashboard featuring tracking error, beta drift, and sector concentration alerts, updating hourly with live market feeds.",
+          "chats": [
+            { "role": "assistant", "message": "Prototype live—share link with the wider team?" },
+            { "role": "user", "message": "Share but set view‑only." },
+            { "role": "assistant", "message": "Shared with view‑only permissions." }
+          ]
+        },
+        {
+          "id": 15,
+          "title": "Tactical Rebalancing Memo",
+          "description": "Based on today’s factor tilt analysis, I drafted a memo recommending a 2 % overweight to quality and 1 % underweight to momentum, including estimated transaction costs.",
+          "chats": [
+            { "role": "assistant", "message": "Memo saved—want me to attach to the client portal?" },
+            { "role": "user", "message": "Yes, and notify account lead." },
+            { "role": "assistant", "message": "Uploaded and Slack DM sent to the lead." }
+          ]
+        }
+      ]
+    },
+  
+    "12": {
+      "activity": "Conducting a midday review and preparing for lunch discussions",
+      "carousel": [
+        [
+          { "id": 46, "text": "User cross‑checks trends on Reuters", "value": "0.8" },
+          { "id": 47, "text": "User analyzes midday data on WSJ", "value": "0.8" },
+          { "id": 48, "text": "User visualizes metrics with Tableau", "value": "0.9" },
+          { "id": 49, "text": "User monitors KPIs via dashboards", "value": "0.8" },
+          { "id": 50, "text": "User reviews performance in Excel", "value": "0.8" }
+        ],
+        [
+          { "id": 51, "text": "User consolidates data in Notion", "value": "0.8" },
+          { "id": 52, "text": "User streamlines tasks with Trello", "value": "0.8" },
+          { "id": 53, "text": "User drafts summaries in Word", "value": "0.8" },
+          { "id": 54, "text": "User compares stats in Sheets", "value": "0.8" },
+          { "id": 55, "text": "User organizes notes digitally", "value": "0.9" }
+        ],
+        [
+          { "id": 56, "text": "User tracks analytics with PowerBI", "value": "0.8" },
+          { "id": 57, "text": "User updates reports in Slack", "value": "0.8" },
+          { "id": 58, "text": "User fine‑tunes project data", "value": "0.8" },
+          { "id": 59, "text": "User reviews progress on Asana", "value": "0.9" },
+          { "id": 60, "text": "User logs daily updates online", "value": "0.8" }
+        ]
+      ],
+      "suggestions": [
+        {
+          "id": 16,
+          "title": "Curate Lunch‑and‑Learn Agenda",
+          "description": "I scraped Slack discussions and trending articles to compile a 30‑minute lunch‑and‑learn agenda featuring GenAI compliance, Excel pro tips, and a micro market‑structure update, then dropped it into a shared doc.",
+          "chats": [
+            { "role": "assistant", "message": "Agenda posted—want me to send calendar invites?" },
+            { "role": "user", "message": "Yes, but mark optional." },
+            { "role": "assistant", "message": "Invites sent with optional status." }
+          ]
+        },
+        {
+          "id": 17,
+          "title": "Midday KPI Outlier Analysis",
+          "description": "I ran a quick z‑score scan across KPIs and flagged churn rate in APAC at 2.3σ above norm; a drill‑down report is ready with user‑level breakouts.",
+          "chats": [
+            { "role": "assistant", "message": "Drill‑down PDF generated—open it now?" },
+            { "role": "user", "message": "Open and annotate potential causes." },
+            { "role": "assistant", "message": "Annotations added on page 2." }
+          ]
+        },
+        {
+          "id": 18,
+          "title": "Competitive News Flash",
+          "description": "I scraped Reuters and WSJ since market open, highlighting Competitor X guidance cut and Competitor Y M&A rumor; insights compiled into a two‑bullet Slack post ready for #strategy.",
+          "chats": [
+            { "role": "assistant", "message": "Post is queued—publish?" },
+            { "role": "user", "message": "Publish after the call." },
+            { "role": "assistant", "message": "Scheduled for 12:45 PM." }
+          ]
+        },
+        {
+          "id": 19,
+          "title": "Mindful Recharge Plan",
+          "description": "I scheduled a 10‑minute guided breathing exercise and stretch on your Apple Watch at 12:50 PM to counter midday fatigue and boost focus.",
+          "chats": [
+            { "role": "assistant", "message": "Routine set—silence notifications during it?" },
+            { "role": "user", "message": "Yes, DND ON." },
+            { "role": "assistant", "message": "DND enabled for the session." }
+          ]
+        },
+        {
+          "id": 20,
+          "title": "Adjust Afternoon Action Plan",
+          "description": "Based on new insights and meeting spillovers, I shifted the client deck review to 3 PM and inserted a 45‑minute churn deep‑dive slot so priorities remain aligned.",
+          "chats": [
+            { "role": "assistant", "message": "Calendar updated—any conflicts remaining?" },
+            { "role": "user", "message": "Looks good; send summary." },
+            { "role": "assistant", "message": "Summary emailed to you." }
+          ]
+        }
+      ]
+    },
+  
+    "13": {
+      "activity": "Attending virtual meetings and collaborating with team members",
+      "carousel": [
+        [
+          { "id": 61, "text": "User connects via Zoom for meetings", "value": "0.9" },
+          { "id": 62, "text": "User shares slides on PowerPoint", "value": "0.8" },
+          { "id": 63, "text": "User collaborates in Teams actively", "value": "0.8" },
+          { "id": 64, "text": "User reviews docs on Drive", "value": "0.8" },
+          { "id": 65, "text": "User accesses files on Slack", "value": "0.8" }
+        ],
+        [
+          { "id": 66, "text": "User updates tasks in Asana", "value": "0.8" },
+          { "id": 67, "text": "User manages calendar in Outlook", "value": "0.9" },
+          { "id": 68, "text": "User coordinates via email threads", "value": "0.8" },
+          { "id": 69, "text": "User brainstorms on whiteboards", "value": "0.8" },
+          { "id": 70, "text": "User uploads files to Dropbox", "value": "0.8" }
+        ],
+        [
+          { "id": 71, "text": "User revisits meeting minutes", "value": "0.8" },
+          { "id": 72, "text": "User tracks action items on Trello", "value": "0.8" },
+          { "id": 73, "text": "User reviews team KPIs online", "value": "0.8" },
+          { "id": 74, "text": "User checks project timelines", "value": "0.8" },
+          { "id": 75, "text": "User logs meeting takeaways", "value": "0.8" }
+        ]
+      ],
+      "suggestions": [
+        {
+          "id": 21,
+          "title": "Real‑Time Decision Log",
+          "description": "I opened a shared Notion page that time‑stamps each decision and rationale in real‑time, ensuring everyone can trace commitments without replaying recordings.",
+          "chats": [
+            { "role": "assistant", "message": "Decision log link posted in chat—grant edit to co‑hosts?" },
+            { "role": "user", "message": "Yes, co‑hosts only." },
+            { "role": "assistant", "message": "Permissions updated." }
+          ]
+        },
+        {
+          "id": 22,
+          "title": "Instant Roadmap Poll",
+          "description": "I built a Zoom poll with four roadmap items plus an 'other' field, ready to capture priority votes and auto‑export to Trello once complete.",
+          "chats": [
+            { "role": "assistant", "message": "Poll prepared—launch when discussion starts?" },
+            { "role": "user", "message": "Launch after slide 6." },
+            { "role": "assistant", "message": "Scheduled trigger at slide 6." }
+          ]
+        },
+        {
+          "id": 23,
+          "title": "Interactive Whiteboard Session",
+          "description": "A Miro board is live with pre‑labeled swimlanes and locked background, and I enabled auto‑export to PNG after session end to streamline follow‑up.",
+          "chats": [
+            { "role": "assistant", "message": "Board link sent—need breakout rooms?" },
+            { "role": "user", "message": "Create two breakout rooms for ideation." },
+            { "role": "assistant", "message": "Rooms created and assigned randomly." }
+          ]
+        },
+        {
+          "id": 24,
+          "title": "Capture Action Items Bot",
+          "description": "I configured a bot to parse 'TODO:' lines in Teams and auto‑create Trello cards with due dates and assignees so nothing is missed post‑call.",
+          "chats": [
+            { "role": "assistant", "message": "Bot arms when meeting ends—OK?" },
+            { "role": "user", "message": "Arm it now for testing." },
+            { "role": "assistant", "message": "Bot activated; test card created." }
+          ]
+        },
+        {
+          "id": 25,
+          "title": "Lightning Recap Scheduling",
+          "description": "I found a 10:30 AM slot for all attendees tomorrow and booked a 15‑minute recap with agenda auto‑populated from today’s decision log.",
+          "chats": [
+            { "role": "assistant", "message": "Invites out—reminder set for 10 minutes prior." },
+            { "role": "user", "message": "Great; attach action item list." },
+            { "role": "assistant", "message": "List attached to invite." }
+          ]
+        }
+      ]
+    },
+  
+    "14": {
+      "activity": "Working on detailed project analysis and report preparation",
+      "carousel": [
+        [
+          { "id": 76, "text": "User uses Power BI for visuals", "value": "0.9" },
+          { "id": 77, "text": "User analyzes trends on RStudio", "value": "0.8" },
+          { "id": 78, "text": "User benchmarks via Salesforce", "value": "0.8" },
+          { "id": 79, "text": "User checks metrics on Google Analytics", "value": "0.8" },
+          { "id": 80, "text": "User refines forecasts using Excel", "value": "0.9" }
+        ],
+        [
+          { "id": 81, "text": "User creates charts in Tableau", "value": "0.8" },
+          { "id": 82, "text": "User models data with Python", "value": "0.8" },
+          { "id": 83, "text": "User reviews reports on FT", "value": "0.8" },
+          { "id": 84, "text": "User monitors trends on WSJ", "value": "0.8" },
+          { "id": 85, "text": "User consolidates data in Notion", "value": "0.8" }
+        ],
+        [
+          { "id": 86, "text": "User explores insights on Bloomberg", "value": "0.8" },
+          { "id": 87, "text": "User validates figures with MATLAB", "value": "0.8" },
+          { "id": 88, "text": "User uses SAS for stats analysis", "value": "0.8" },
+          { "id": 89, "text": "User refines analysis in SPSS", "value": "0.8" },
+          { "id": 90, "text": "User reviews model outputs online", "value": "0.8" }
+        ]
+      ],
+      "suggestions": [
+        {
+          "id": 26,
+          "title": "Cohort Analysis Module",
+          "description": "I coded a Python script segmenting users by acquisition cohort and exporting retention decay and lifetime value charts directly into your Tableau dashboard under a new 'Cohorts' sheet.",
+          "chats": [
+            { "role": "assistant", "message": "Cohort sheet live—review?" },
+            { "role": "user", "message": "Open and color‑code by channel." },
+            { "role": "assistant", "message": "Channel colors applied." }
+          ]
+        },
+        {
+          "id": 27,
+          "title": "Executive Summary Slide",
+          "description": "I condensed findings into a single branded slide with three bullet insights and a stacked bar chart, following client style guidelines to ensure quick leadership consumption.",
+          "chats": [
+            { "role": "assistant", "message": "Slide inserted at position 2—looks good?" },
+            { "role": "user", "message": "Move to position 1." },
+            { "role": "assistant", "message": "Moved to opening slot." }
+          ]
+        },
+        {
+          "id": 28,
+          "title": "Data Lineage Audit",
+          "description": "Using Great Expectations logs, I visualized metric lineage from raw source to dashboard, flagging two undocumented joins now highlighted in red for your review.",
+          "chats": [
+            { "role": "assistant", "message": "Lineage diagram published—open now?" },
+            { "role": "user", "message": "Open and comment on the joins." },
+            { "role": "assistant", "message": "Comments added next to each flagged join." }
+          ]
+        },
+        {
+          "id": 29,
+          "title": "What‑If Forecast Scenarios",
+          "description": "I added interactive sliders for price, churn, and CAC in your spreadsheet to model upside and downside projections, locking formulas to maintain integrity.",
+          "chats": [
+            { "role": "assistant", "message": "Scenarios ready—need a sensitivity tornado chart?" },
+            { "role": "user", "message": "Yes, add beneath sliders." },
+            { "role": "assistant", "message": "Chart created and linked." }
+          ]
+        },
+        {
+          "id": 30,
+          "title": "Stakeholder Question Bank",
+          "description": "I compiled 13 anticipated stakeholder questions (now including ESG impact) with concise, approved answers so you can anticipate and handle tough queries smoothly.",
+          "chats": [
+            { "role": "assistant", "message": "Question bank saved—share to project folder?" },
+            { "role": "user", "message": "Share and set edit rights to owners only." },
+            { "role": "assistant", "message": "Shared with restricted edits." }
+          ]
+        }
+      ]
+    },
+  
+    "15": {
+      "activity": "Finalizing documents and strategizing for client work",
+      "carousel": [
+        [
+          { "id": 91, "text": "User refines decks on PowerPoint", "value": "0.9" },
+          { "id": 92, "text": "User edits reports in Word", "value": "0.8" },
+          { "id": 93, "text": "User organizes tasks on Trello", "value": "0.8" },
+          { "id": 94, "text": "User reviews data on Sheets", "value": "0.8" },
+          { "id": 95, "text": "User updates figures in Excel", "value": "0.8" }
+        ],
+        [
+          { "id": 96, "text": "User drafts outlines on Notion", "value": "0.8" },
+          { "id": 97, "text": "User checks emails on Outlook", "value": "0.8" },
+          { "id": 98, "text": "User summarizes in OneNote", "value": "0.8" },
+          { "id": 99, "text": "User archives files in Drive", "value": "0.8" },
+          { "id": 100, "text": "User cross‑checks stats in CRM", "value": "0.9" }
+        ],
+        [
+          { "id": 101, "text": "User analyzes feedback on Slack", "value": "0.8" },
+          { "id": 102, "text": "User reviews meeting notes", "value": "0.8" },
+          { "id": 103, "text": "User updates project timelines", "value": "0.8" },
+          { "id": 104, "text": "User consolidates key metrics", "value": "0.8" },
+          { "id": 105, "text": "User reviews strategic summaries", "value": "0.8" }
+        ]
+      ],
+      "suggestions": [
+        {
+          "id": 31,
+          "title": "Apply Brand Style Guide",
+          "description": "I ran a consistency audit across 42 slides, updating fonts, colors, and icons to match the client’s brand guide while leaving the analyst appendix untouched for technical depth.",
+          "chats": [
+            { "role": "assistant", "message": "Audit complete—visual uniformity improved 100 %." },
+            { "role": "user", "message": "Export a PDF comp to review." },
+            { "role": "assistant", "message": "PDF exported and placed in /Deck/Review." }
+          ]
+        },
+        {
+          "id": 32,
+          "title": "Transform Tables into Infographics",
+          "description": "I replaced dense KPI tables with icon‑grid infographics and added hover tooltips retaining exact figures to improve readability without sacrificing precision.",
+          "chats": [
+            { "role": "assistant", "message": "Infographics inserted—want print‑safe colors?" },
+            { "role": "user", "message": "Yes, convert to CMYK palette." },
+            { "role": "assistant", "message": "Palette converted." }
+          ]
+        },
+        {
+          "id": 33,
+          "title": "Compose Executive Cover Email",
+          "description": "I drafted a 120‑word cover email summarizing deliverables, adjusted the tone to be conversational yet professional, and attached the final documents for seamless sending.",
+          "chats": [
+            { "role": "assistant", "message": "Email draft in Outlook—review?" },
+            { "role": "user", "message": "Insert a quick thank‑you note at the end." },
+            { "role": "assistant", "message": "Thank‑you line added." }
+          ]
+        },
+        {
+          "id": 34,
+          "title": "Red‑Team Gap Review",
+          "description": "I invited Alex for a red‑team pass to critique blind spots and scheduled a 3:30 PM reminder; feedback will be logged as tracked changes so edits are transparent.",
+          "chats": [
+            { "role": "assistant", "message": "Invitation accepted—expect comments by 3 PM." },
+            { "role": "user", "message": "Great; set notification on first comment." },
+            { "role": "assistant", "message": "Notification enabled for first edit." }
+          ]
+        },
+        {
+          "id": 35,
+          "title": "Version Control Snapshot",
+          "description": "I tagged the draft as v1.3 in SharePoint, preserved a read‑only checkpoint, and logged the snapshot in the change log for future reference.",
+          "chats": [
+            { "role": "assistant", "message": "Snapshot saved—link copied to clipboard." },
+            { "role": "user", "message": "Paste link in Slack channel." },
+            { "role": "assistant", "message": "Link posted to #client‑deck." }
+          ]
+        }
+      ]
+    },
+  
+    "16": {
+      "activity": "Wrapping up work and consolidating reports for the day",
+      "carousel": [
+        [
+          { "id": 106, "text": "User logs work on Google Sheets", "value": "0.8" },
+          { "id": 107, "text": "User reviews performance on Salesforce", "value": "0.8" },
+          { "id": 108, "text": "User organizes tasks on Asana", "value": "0.8" },
+          { "id": 109, "text": "User syncs emails via Outlook", "value": "0.8" },
+          { "id": 110, "text": "User finalizes reports on Slack", "value": "0.8" }
+        ],
+        [
+          { "id": 111, "text": "User archives data in Drive", "value": "0.8" },
+          { "id": 112, "text": "User consolidates info in Notion", "value": "0.8" },
+          { "id": 113, "text": "User checks progress on Jira", "value": "0.8" },
+          { "id": 114, "text": "User reviews KPIs on Tableau", "value": "0.8" },
+          { "id": 115, "text": "User updates project logs online", "value": "0.8" }
+        ],
+        [
+          { "id": 116, "text": "User summarizes daily achievements", "value": "0.8" },
+          { "id": 117, "text": "User documents workflow in Confluence", "value": "0.8" },
+          { "id": 118, "text": "User reviews feedback on CRM", "value": "0.8" },
+          { "id": 119, "text": "User schedules reminders in Outlook", "value": "0.8" },
+          { "id": 120, "text": "User cross‑checks updates with team", "value": "0.8" }
+        ]
+      ],
+      "suggestions": [
+        {
+          "id": 36,
+          "title": "Archive Final Assets",
+          "description": "I created a date‑stamped archive folder (2025‑04‑19) in Drive, copied 17 key deliverables, and verified checksum integrity to ensure safe storage before tomorrow’s cycle begins.",
+          "chats": [
+            { "role": "assistant", "message": "Archive complete—checksum validation passed." },
+            { "role": "user", "message": "Delete local temp files." },
+            { "role": "assistant", "message": "Temp files removed." }
+          ]
+        },
+        {
+          "id": 37,
+          "title": "Push Metrics Slack Bot",
+          "description": "The KPI bot is scheduled to post a summary with line‑charts at 6 : 05 PM in #analytics, including a link to underlying data for transparency.",
+          "chats": [
+            { "role": "assistant", "message": "Bot queued—preview message?" },
+            { "role": "user", "message": "Preview please." },
+            { "role": "assistant", "message": "Preview sent via DM." }
+          ]
+        },
+        {
+          "id": 38,
+          "title": "Tag Lessons Learned",
+          "description": "I drafted a Confluence page titled 'Sprint 14 – Day 3 LL', tagged #latency, #client‑comms, and #risk‑model, and included a quick‑read summary table for future retros.",
+          "chats": [
+            { "role": "assistant", "message": "Page published—want to notify the squad?" },
+            { "role": "user", "message": "Yes, post link in #retrospective." },
+            { "role": "assistant", "message": "Link posted." }
+          ]
+        },
+        {
+          "id": 39,
+          "title": "Update Sprint Burndown",
+          "description": "I updated burndown chart to 62 % completion, attached a screenshot, and @mentioned the team in Jira so everyone sees real‑time progress.",
+          "chats": [
+            { "role": "assistant", "message": "Screenshot posted—team acknowledged." },
+            { "role": "user", "message": "Good, move ticket XYZ‑123 to 'Done'." },
+            { "role": "assistant", "message": "Ticket moved and closed." }
+          ]
+        },
+        {
+          "id": 40,
+          "title": "Configure Auto‑Responder",
+          "description": "An after‑hours auto‑reply is set to activate at 6 PM, indicating responses resume at 8 AM and providing an escalation contact for urgent matters.",
+          "chats": [
+            { "role": "assistant", "message": "Auto‑responder enabled for tonight." },
+            { "role": "user", "message": "Add a link to FAQ page." },
+            { "role": "assistant", "message": "FAQ link added to message body." }
+          ]
+        }
+      ]
+    },
+  
+    "17": {
+      "activity": "Concluding the workday and sending final communications",
+      "carousel": [
+        [
+          { "id": 121, "text": "User reviews emails on Outlook", "value": "0.8" },
+          { "id": 122, "text": "User organizes files on Drive", "value": "0.8" },
+          { "id": 123, "text": "User logs tasks in CRM", "value": "0.8" },
+          { "id": 124, "text": "User checks end‑of‑day data on Slack", "value": "0.8" },
+          { "id": 125, "text": "User finalizes reports on Trello", "value": "0.8" }
+        ],
+        [
+          { "id": 126, "text": "User sends wrap‑up emails", "value": "0.8" },
+          { "id": 127, "text": "User updates status in Asana", "value": "0.8" },
+          { "id": 128, "text": "User reviews daily summaries", "value": "0.8" },
+          { "id": 129, "text": "User archives docs on SharePoint", "value": "0.8" },
+          { "id": 130, "text": "User sets final reminders on Calendar", "value": "0.9" }
+        ],
+        [
+          { "id": 131, "text": "User summarizes day’s work online", "value": "0.8" },
+          { "id": 132, "text": "User double‑checks team feedback", "value": "0.8" },
+          { "id": 133, "text": "User reviews pending tasks", "value": "0.8" },
+          { "id": 134, "text": "User logs client communications", "value": "0.8" },
+          { "id": 135, "text": "User prepares exit meeting notes", "value": "0.8" }
+        ]
+      ],
+      "suggestions": [
+        {
+          "id": 41,
+          "title": "Send Gratitude Note",
+          "description": "I compiled contributor names and drafted a three‑line thank‑you email summarizing today’s wins; CC’d the project manager to foster visibility and morale.",
+          "chats": [
+            { "role": "assistant", "message": "Email ready—send now?" },
+            { "role": "user", "message": "Send and log in CRM." },
+            { "role": "assistant", "message": "Email sent and logged." }
+          ]
+        },
+        {
+          "id": 42,
+          "title": "Run EOD Checklist Script",
+          "description": "A pre‑built script verifies backups, commits code, and locks tickets; dry‑run passed with zero errors, standing by for full execution.",
+          "chats": [
+            { "role": "assistant", "message": "Ready to execute full script." },
+            { "role": "user", "message": "Execute and post summary." },
+            { "role": "assistant", "message": "Script executed; summary posted to #dev‑ops." }
+          ]
+        },
+        {
+          "id": 43,
+          "title": "Plan Morning Stand‑Up",
+          "description": "I drafted tomorrow’s stand‑up agenda with rolled‑over blockers and pinned it in Slack, ensuring smooth kickoff without context switching.",
+          "chats": [
+            { "role": "assistant", "message": "Agenda pinned—notify stakeholders?" },
+            { "role": "user", "message": "Yes, @channel." },
+            { "role": "assistant", "message": "@channel notification sent." }
+          ]
+        },
+        {
+          "id": 44,
+          "title": "Clean Desktop Folders",
+          "description": "I sorted 37 loose files into weekly bins, moved screenshots to the 'Images' folder, and left a shortcut on your desktop to the tidy archive.",
+          "chats": [
+            { "role": "assistant", "message": "Cleanup done—desktop decluttered." },
+            { "role": "user", "message": "Great, empty trash." },
+            { "role": "assistant", "message": "Trash emptied." }
+          ]
+        },
+        {
+          "id": 45,
+          "title": "Review Focus Stats",
+          "description": "I analyzed today’s RescueTime report showing 62 % focus time and highlighted top distractions (social media 23 min) with actionable recommendations to improve tomorrow.",
+          "chats": [
+            { "role": "assistant", "message": "Insights ready—want them in an email or Slack?" },
+            { "role": "user", "message": "Slack DM." },
+            { "role": "assistant", "message": "DM sent with recommendations." }
+          ]
+        }
+      ]
+    },
+  
+    "18": {
+      "activity": "Relaxing at home while catching up on news and social media",
+      "carousel": [
+        [
+          { "id": 136, "text": "User streams shows on Netflix daily", "value": "0.8" },
+          { "id": 137, "text": "User browses lifestyle blogs on Flipboard", "value": "0.8" },
+          { "id": 138, "text": "User checks social feeds on Twitter", "value": "0.8" },
+          { "id": 139, "text": "User reads tech updates on Wired", "value": "0.8" },
+          { "id": 140, "text": "User reviews trending topics on Reddit", "value": "0.8" }
+        ],
+        [
+          { "id": 141, "text": "User watches vlogs on YouTube", "value": "0.8" },
+          { "id": 142, "text": "User explores DIY projects on Pinterest", "value": "0.8" },
+          { "id": 143, "text": "User listens to music on Spotify", "value": "0.8" },
+          { "id": 144, "text": "User scrolls Instagram for trends", "value": "0.8" },
+          { "id": 145, "text": "User checks recipes on AllRecipes", "value": "0.8" }
+        ],
+        [
+          { "id": 146, "text": "User chats on WhatsApp with friends", "value": "0.8" },
+          { "id": 147, "text": "User follows news on BBC regularly", "value": "0.8" },
+          { "id": 148, "text": "User reads entertainment on TMZ", "value": "0.8" },
+          { "id": 149, "text": "User tracks trends on TikTok", "value": "0.8" },
+          { "id": 150, "text": "User checks local events on Eventbrite", "value": "0.8" }
+        ]
+      ],
+      "suggestions": [
+        {
+          "id": 46,
+          "title": "Curate Personalized News Digest",
+          "description": "I assembled a five‑story digest blending finance, tech, and leisure topics tailored to your interests and emailed it to you; future digests will auto‑deliver nightly unless paused.",
+          "chats": [
+            { "role": "assistant", "message": "Digest sent—want push notification on arrival?" },
+            { "role": "user", "message": "No push for now." },
+            { "role": "assistant", "message": "Push disabled; digest will remain email‑only." }
+          ]
+        },
+        {
+          "id": 47,
+          "title": "Set Screen‑Time Reminder",
+          "description": "I activated a gentle alert on iOS to ping after 45 minutes of continuous scrolling so you can take breaks and prevent doom‑scroll fatigue.",
+          "chats": [
+            { "role": "assistant", "message": "Reminder set—start timer at 7 PM." },
+            { "role": "user", "message": "Great." },
+            { "role": "assistant", "message": "Timer armed." }
+          ]
+        },
+        {
+          "id": 48,
+          "title": "20‑Minute Mobility Routine",
+          "description": "I queued a guided stretch video targeting desk posture and cast it to your TV, scheduling it at 7 : 30 PM to loosen up before dinner.",
+          "chats": [
+            { "role": "assistant", "message": "Video queued—adjust volume?" },
+            { "role": "user", "message": "Set to 40 %." },
+            { "role": "assistant", "message": "Volume set." }
+          ]
+        },
+        {
+          "id": 49,
+          "title": "Discover New Spotify Playlist",
+          "description": "A custom playlist mixing chillhop and indie tracks named 'Evening Wind‑Down' is created and added to your library for background ambiance.",
+          "chats": [
+            { "role": "assistant", "message": "Playlist ready—shuffle on?" },
+            { "role": "user", "message": "Shuffle yes." },
+            { "role": "assistant", "message": "Shuffle enabled." }
+          ]
+        },
+        {
+          "id": 50,
+          "title": "Batch Reply Personal Messages",
+          "description": "I set a 15‑minute timer to process WhatsApp and Instagram DMs in one focused batch, prompting you at 7 : 30 PM so replies don’t interrupt relaxation.",
+          "chats": [
+            { "role": "assistant", "message": "Timer scheduled—cancel anytime with 'stop batch'." },
+            { "role": "user", "message": "All good." },
+            { "role": "assistant", "message": "Batch reply session armed." }
+          ]
+        }
+      ]
+    },
+  
+    "19": {
+      "activity": "Preparing dinner and connecting with family",
+      "carousel": [
+        [
+          { "id": 151, "text": "User checks recipes on AllRecipes daily", "value": "0.8" },
+          { "id": 152, "text": "User orders groceries via Instacart", "value": "0.8" },
+          { "id": 153, "text": "User plans meals with calendar apps", "value": "0.8" },
+          { "id": 154, "text": "User reads food blogs on Food52", "value": "0.8" },
+          { "id": 155, "text": "User explores healthy diets online", "value": "0.8" }
+        ],
+        [
+          { "id": 156, "text": "User uses meal planners on Yummly", "value": "0.8" },
+          { "id": 157, "text": "User tracks calories with MyFitnessPal", "value": "0.8" },
+          { "id": 158, "text": "User organizes dinner menus on Trello", "value": "0.8" },
+          { "id": 159, "text": "User compares recipes on Epicurious", "value": "0.8" },
+          { "id": 160, "text": "User samples dishes from food blogs", "value": "0.8" }
+        ],
+        [
+          { "id": 161, "text": "User video calls family on FaceTime", "value": "0.8" },
+          { "id": 162, "text": "User checks restaurant deals locally", "value": "0.8" },
+          { "id": 163, "text": "User reads culinary reviews on Yelp", "value": "0.8" },
+          { "id": 164, "text": "User plans weekend outings with family", "value": "0.8" },
+          { "id": 165, "text": "User shares dinner photos on Instagram", "value": "0.8" }
+        ]
+      ],
+      "suggestions": [
+        {
+          "id": 51,
+          "title": "Macro‑Balanced Meal Prep",
+          "description": "I created a two‑day dinner menu meeting a 40‑30‑30 macro ratio, substituting quinoa for rice, and generated a nutritional summary that syncs to MyFitnessPal.",
+          "chats": [
+            { "role": "assistant", "message": "Menu updated—push to MyFitnessPal?" },
+            { "role": "user", "message": "Push." },
+            { "role": "assistant", "message": "Synced." }
+          ]
+        },
+        {
+          "id": 52,
+          "title": "Shared Family Shopping Board",
+          "description": "A collaborative Google Keep grocery list synced to Instacart is live, pre‑filled with staples plus avocados and oat milk so everyone can add items in real‑time.",
+          "chats": [
+            { "role": "assistant", "message": "List shared—notify family group chat?" },
+            { "role": "user", "message": "Yes, notify." },
+            { "role": "assistant", "message": "Notification sent." }
+          ]
+        },
+        {
+          "id": 53,
+          "title": "Collaborative Recipe Book",
+          "description": "I spun up a Notion database for favorite recipes and imported tonight’s meal with photo, cooking time, and macros, enabling star ratings for future favorites.",
+          "chats": [
+            { "role": "assistant", "message": "Recipe added—want to add tags?" },
+            { "role": "user", "message": "Tag Mediterranean." },
+            { "role": "assistant", "message": "Tag applied." }
+          ]
+        },
+        {
+          "id": 54,
+          "title": "Table‑Topic Cards",
+          "description": "Ten conversation prompt cards, including a new space exploration trivia, are generated and ready to display on your phone so dinner chat stays engaging.",
+          "chats": [
+            { "role": "assistant", "message": "Cards ready—open deck?" },
+            { "role": "user", "message": "Open." },
+            { "role": "assistant", "message": "Deck displayed." }
+          ]
+        },
+        {
+          "id": 55,
+          "title": "Smart Speaker Cooking Timers",
+          "description": "Alexa routines now start staggered timers for quinoa (25 min), salmon (12 min), and veggies (8 min) once you say 'begin cook', ensuring perfect timing.",
+          "chats": [
+            { "role": "assistant", "message": "Routine awaits your 'begin cook' command." },
+            { "role": "user", "message": "Good." },
+            { "role": "assistant", "message": "Standing by." }
+          ]
+        }
+      ]
+    },
+  
+    "20": {
+      "activity": "Engaging in leisure reading and pursuing personal hobbies",
+      "carousel": [
+        [
+          { "id": 166, "text": "User reads novels on Kindle daily", "value": "0.8" },
+          { "id": 167, "text": "User browses art galleries on Artsy", "value": "0.8" },
+          { "id": 168, "text": "User explores DIY projects on YouTube", "value": "0.8" },
+          { "id": 169, "text": "User studies history on Curiosity", "value": "0.8" },
+          { "id": 170, "text": "User reviews book summaries online", "value": "0.8" }
+        ],
+        [
+          { "id": 171, "text": "User listens to podcasts on Spotify", "value": "0.8" },
+          { "id": 172, "text": "User follows creative blogs on Medium", "value": "0.8" },
+          { "id": 173, "text": "User writes in a digital journal", "value": "0.8" },
+          { "id": 174, "text": "User explores music trends on SoundCloud", "value": "0.8" },
+          { "id": 175, "text": "User tracks awards on Goodreads", "value": "0.8" }
+        ],
+        [
+          { "id": 176, "text": "User engages in online art forums", "value": "0.8" },
+          { "id": 177, "text": "User watches tutorials on Vimeo", "value": "0.8" },
+          { "id": 178, "text": "User practices sketching on Procreate", "value": "0.8" },
+          { "id": 179, "text": "User joins virtual book clubs", "value": "0.8" },
+          { "id": 180, "text": "User checks art trends on Behance", "value": "0.8" }
+        ]
+      ],
+      "suggestions": [
+        {
+          "id": 56,
+          "title": "Join Live Author Q&A",
+          "description": "I registered you for tonight’s 8 PM virtual Q&A with your favorite historian and synced the link to your calendar so you can ask questions directly.",
+          "chats": [
+            { "role": "assistant", "message": "Registration confirmed—reminder set for 7:55 PM." },
+            { "role": "user", "message": "Great, add a question placeholder: 'economic impacts of revolutions'." },
+            { "role": "assistant", "message": "Placeholder question added." }
+          ]
+        },
+        {
+          "id": 57,
+          "title": "30‑Day Sketch Challenge",
+          "description": "I kicked off a 30‑day sketch challenge in Procreate with daily prompts and set a 7 PM reminder so your drawing habit builds consistently.",
+          "chats": [
+            { "role": "assistant", "message": "Prompt 1 'urban skyline' ready—open Procreate?" },
+            { "role": "user", "message": "Open later." },
+            { "role": "assistant", "message": "Understood—reminder will pop at 7 PM." }
+          ]
+        },
+        {
+          "id": 58,
+          "title": "Digitize Book Highlights",
+          "description": "I parsed your Kindle clippings, exported them to Roam, and auto‑tagged themes like #philosophy and #strategy for easy retrieval during writing sessions.",
+          "chats": [
+            { "role": "assistant", "message": "Highlights imported—open Roam page?" },
+            { "role": "user", "message": "Open now." },
+            { "role": "assistant", "message": "Page opened in browser." }
+          ]
+        },
+        {
+          "id": 59,
+          "title": "Publish Micro‑Blog Reflection",
+          "description": "A 150‑word Medium draft summarizing today’s key insight is ready and scheduled for 9 PM to keep your audience engaged with fresh content.",
+          "chats": [
+            { "role": "assistant", "message": "Draft scheduled—want cross‑post to LinkedIn?" },
+            { "role": "user", "message": "Yes, cross‑post." },
+            { "role": "assistant", "message": "LinkedIn post scheduled." }
+          ]
+        },
+        {
+          "id": 60,
+          "title": "Pomodoro Hobby Practice",
+          "description": "I configured a 25/5 Pomodoro timer sequence for guitar practice starting at 7 : 15 PM with audio cues, helping you progress without burnout.",
+          "chats": [
+            { "role": "assistant", "message": "Sequence programmed—ready to start at 7 : 15." },
+            { "role": "user", "message": "All set." },
+            { "role": "assistant", "message": "Timer will begin on schedule." }
+          ]
+        }
+      ]
+    },
+  
+    "21": {
+      "activity": "Winding down, reflecting on the day, and planning for tomorrow",
+      "carousel": [
+        [
+          { "id": 181, "text": "User journals in planner apps nightly", "value": "0.8" },
+          { "id": 182, "text": "User uses Calm for nightly meditation", "value": "0.8" },
+          { "id": 183, "text": "User reads bedtime stories online", "value": "0.8" },
+          { "id": 184, "text": "User tracks sleep with a Fitbit", "value": "0.8" },
+          { "id": 185, "text": "User reviews daily goals on Trello", "value": "0.8" }
+        ],
+        [
+          { "id": 186, "text": "User sets goals in digital journals", "value": "0.8" },
+          { "id": 187, "text": "User reflects via Evernote notes", "value": "0.8" },
+          { "id": 188, "text": "User monitors health on Apple Watch", "value": "0.8" },
+          { "id": 189, "text": "User studies tomorrow's agenda", "value": "0.8" },
+          { "id": 190, "text": "User plans next day in Notion", "value": "0.8" }
+        ],
+        [
+          { "id": 191, "text": "User logs reflections on Day One", "value": "0.8" },
+          { "id": 192, "text": "User uses Headspace for calm", "value": "0.8" },
+          { "id": 193, "text": "User reads inspirational quotes", "value": "0.8" },
+          { "id": 194, "text": "User reviews personal achievements", "value": "0.8" },
+          { "id": 195, "text": "User relaxes with soft music online", "value": "0.8" }
+        ]
+      ],
+      "suggestions": [
+        {
+          "id": 61,
+          "title": "Gratitude List Ritual",
+          "description": "I inserted a three‑item gratitude template into Day One with example entries, prompting you to foster positivity before sleep.",
+          "chats": [
+            { "role": "assistant", "message": "Template ready—start writing?" },
+            { "role": "user", "message": "Yes." },
+            { "role": "assistant", "message": "Writing interface opened." }
+          ]
+        },
+        {
+          "id": 62,
+          "title": "Box Breathing Wind‑Down",
+          "description": "A four‑minute guided box‑breathing audio is queued in Headspace, set to auto‑lower device volume and activate DND for uninterrupted relaxation.",
+          "chats": [
+            { "role": "assistant", "message": "Audio queued—play now?" },
+            { "role": "user", "message": "Play." },
+            { "role": "assistant", "message": "Playing with volume at 20 %." }
+          ]
+        },
+        {
+          "id": 63,
+          "title": "Set Sleep‑Tracking Goal",
+          "description": "Bedtime is scheduled for 11 PM with a smart alarm at 6 : 40 AM, targeting 7 h 30 m sleep, and sleep‑tracking enabled on your Fitbit.",
+          "chats": [
+            { "role": "assistant", "message": "Sleep goal pinned—adjust alarm window?" },
+            { "role": "user", "message": "Keep as is." },
+            { "role": "assistant", "message": "Settings saved." }
+          ]
+        },
+        {
+          "id": 64,
+          "title": "Queue Morning Playlist",
+          "description": "An upbeat Spotify playlist fades in at alarm time to energize your morning routine, integrated with smart lights that brighten gradually.",
+          "chats": [
+            { "role": "assistant", "message": "Playlist and lights scheduled—test fade?" },
+            { "role": "user", "message": "No test needed." },
+            { "role": "assistant", "message": "Alright; will trigger tomorrow." }
+          ]
+        },
+        {
+          "id": 65,
+          "title": "Weather and Commute Check",
+          "description": "I fetched tomorrow’s forecast (55–72 °F, light rain) and traffic (32 min commute) and suggested attire (light waterproof jacket), emailing you the summary for reference.",
+          "chats": [
+            { "role": "assistant", "message": "Summary emailed—want calendar note?" },
+            { "role": "user", "message": "Add note at 7 AM." },
+            { "role": "assistant", "message": "Calendar note added." }
+          ]
+        }
+      ]
+    }
+  }
+  
