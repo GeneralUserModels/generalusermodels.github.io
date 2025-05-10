@@ -18,43 +18,31 @@ const DemoPage = () => {
     setSelectedHour(newHour);
   };
 
-  const codeString = `from gum import GUMClient, ObservationType
+  const codeString = `from dotenv import load_dotenv
+load_dotenv()
 
-# Initialize the GUM client
-client = GUMClient(api_key="your_api_key_here")
+from gum import gum
+from gum.observers import Screen
+import time
 
-# Collect observations from various sources
-observations = [
-    {"type": ObservationType.SCREENSHOT, "data": screenshot_bytes, "timestamp": "2024-05-10T13:45:00Z"},
-    {"type": ObservationType.TEXT, "data": "Meeting with Alex about project timeline", "timestamp": "2024-05-10T14:00:00Z"},
-    {"type": ObservationType.APP_USAGE, "data": {"app": "VSCode", "duration": 3600}, "timestamp": "2024-05-10T15:30:00Z"}
-]
-
-# Add observations to user model
-client.add_observations(observations)
-
-# Query the user model to get personalized insights
-results = client.query(
-    query="What is the user working on today?",
-    confidence_threshold=0.7
+# Create observer instances
+screen_observer = Screen()
+g = gum(
+    "Test User",
+    screen_observer,
 )
 
-# Use insights to power proactive assistance
-if "project deadline" in results.topics:
-    reminder = client.generate_reminder(
-        context=results,
-        urgency="medium"
-    )
-    
-    print(f"Suggested reminder: {reminder}")
+# Start the update loop
+g.start_update_loop()
 
-# Retrieve user preferences for a specific context
-preferences = client.get_preferences(
-    context="code editor",
-    attributes=["theme", "font_size", "language"]
-)
-
-print(f"User's coding preferences: {preferences}")`;
+try:
+    # Keep the main thread alive
+    while True:
+        time.sleep(1)
+except KeyboardInterrupt:
+    # Handle clean shutdown when Ctrl+C is pressed
+    print("Shutting down...")
+    g.stop_update_loop()`;
 
   return (
 
