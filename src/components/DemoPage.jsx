@@ -58,10 +58,10 @@ print(f"User's coding preferences: {preferences}")`;
 
   return (
 
-    <div style={{margin: '0 auto', paddingLeft: '5%', paddingRight: '5%', paddingTop: '40px', paddingBottom: '20px' }}>
-      <h1 style={{ marginBottom: '10px', textAlign: 'center' }}>Learning General User Models from Computer Use</h1>
+    <div style={{margin: '0 auto', paddingLeft: '5%', paddingRight: '5%', paddingTop: '40px', paddingBottom: '30px' }}>
+      <h1 style={{ marginBottom: '20px', textAlign: 'center' }}>Learning General User Models from Computer Use</h1>
       
-      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '20px' }}>
+      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '10px' }}>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '0 15px', marginBottom: '15px' }}>
           <div style={{ fontSize: '1.1rem', fontWeight: '500' }}>Omar Shaikh</div>
           <div style={{  fontWeight: '300' }}>Stanford</div>

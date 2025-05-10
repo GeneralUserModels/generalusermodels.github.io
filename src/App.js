@@ -10,8 +10,8 @@ const App = ({ carouselData, suggestionsData }) => {
       {/* App Section */}
       <div
         style={{
-          margin: '10px',
-          padding: '10px',
+          margin: '0px',
+          padding: '0px',
           paddingTop: '0',
           marginTop: '0'
         }}

@@ -23,20 +23,20 @@ const AnimatedRow = ({ row, rowIndex }) => {
               style={{
                 display: 'flex',
                 alignItems: 'center',
-                backgroundColor: '#FFFFF0',
+                backgroundColor: 'var(--color-main-text)',
                 borderRadius: '8px',
                 padding: '10px',
                 paddingTop: '3px',
                 paddingBottom: '3px',
                 marginRight: '10px',
                 paddingRight: '0px',
-                flex: '0 0 175px',
-                marginLeft: isFirstCardInSecondRow ? '95px' : '0'
+                flex: '0 0 275px',
+                marginLeft: isFirstCardInSecondRow ? '132px' : '0'
               }}
             >
               <div
                 style={{
-                  width: '135px',
+                  width: '220px',
                   color: '#333',
                   fontFamily: 'sans-serif',
                   fontSize: '16px',
@@ -74,19 +74,19 @@ const AnimatedRow = ({ row, rowIndex }) => {
               style={{
                 display: 'flex',
                 alignItems: 'center',
-                backgroundColor: '#FFFFF0',
+                backgroundColor: 'var(--color-main-text)',
                 borderRadius: '8px',
                 padding: '10px',
                 paddingTop: '3px',
                 paddingBottom: '3px',
                 marginRight: '10px',
                 paddingRight: '0px',
-                flex: '0 0 175px'
+                flex: '0 0 275px'
               }}
             >
               <div
                 style={{
-                  width: '135px',
+                  width: '220px',
                   color: '#333',
                   fontFamily: 'sans-serif',
                   fontSize: '16px',
@@ -164,7 +164,7 @@ const Carousel = ({ carouselData }) => {
           marginBottom: '20px',
         }}
       >
-        General User Model
+        The General User Model (GUM)
       </h2>
       {carouselData.map((row, index) => (
         <AnimatedRow key={index} row={row} rowIndex={index} />

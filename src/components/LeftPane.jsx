@@ -152,7 +152,7 @@ const LeftPane = ({ selectedHour, onTimeChange, activity }) => {
         >
           <span style={{ fontSize: '14px', color: '#999' }}>GIF Screen</span>
         </div>
-        <p style={{ margin: '5px 0 10px 0', fontSize: '16px' }}>
+        <p style={{ margin: '15px 0 10px 0', fontSize: '16px' }}>
           The user is <b>{activity.charAt(0).toLowerCase() + activity.slice(1)}</b>
         </p>
       </div>
