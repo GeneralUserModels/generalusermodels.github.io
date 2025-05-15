@@ -1,13 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.46d6f85a.css",
-    "main.js": "/static/js/main.72234e32.js",
+    "main.js": "/static/js/main.7c7fb096.js",
+    "static/media/inboxclips.gif": "/static/media/inboxclips.78f5c800bf722c2abc1b.gif",
+    "static/media/lunchclip.gif": "/static/media/lunchclip.71572f4831eb420c3405.gif",
+    "static/media/figmaclip.gif": "/static/media/figmaclip.ffaa72fe27ff32661bed.gif",
+    "static/media/excelclip.gif": "/static/media/excelclip.ca889a0e939853439f22.gif",
+    "static/media/jobclip.gif": "/static/media/jobclip.05fd1269c0670cb6f5c5.gif",
+    "static/media/essayclip.gif": "/static/media/essayclip.86def0d021bb72727202.gif",
     "index.html": "/index.html",
     "main.46d6f85a.css.map": "/static/css/main.46d6f85a.css.map",
-    "main.72234e32.js.map": "/static/js/main.72234e32.js.map"
+    "main.7c7fb096.js.map": "/static/js/main.7c7fb096.js.map"
   },
   "entrypoints": [
     "static/css/main.46d6f85a.css",
-    "static/js/main.72234e32.js"
+    "static/js/main.7c7fb096.js"
   ]
 }
