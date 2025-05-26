@@ -122,7 +122,7 @@ if __name__ == "__main__":
           margin: '0',
           fontSize: '15px'
         }}>
-          Human-computer interaction has long imagined technology that understands us-from our preferences and habits, to the timing and purpose of our everyday actions. Yet current user models remain fragmented, narrowly tailored to specific apps, and incapable of the flexible reasoning required to fulfill these visions. This paper presents an architecture for a general user model (GUM) that learns about you by observing any interaction you have with your computer. The GUM takes as input any unstructured observation of a user (e.g., device screenshots) and constructs confidence-weighted propositions that capture the user's knowledge and preferences.
+          Human-computer interaction has long imagined technology that understands us—from our preferences and habits, to the timing and purpose of our everyday actions. Yet current user models remain fragmented, narrowly tailored to specific apps, and incapable of the flexible reasoning required to fulfill these visions. This paper presents an architecture for a general user model (GUM) that learns about you by observing any interaction you have with your computer. The GUM takes as input any unstructured observation of a user (e.g., device screenshots) and constructs confidence-weighted propositions that capture the user's knowledge and preferences.
         </p>
         {!abstractExpanded && (
           <div style={{ display: 'flex', justifyContent: 'center', marginTop: '15px' }}>
@@ -185,7 +185,7 @@ if __name__ == "__main__":
       <div className="carousel-pane">
         <Carousel carouselData={currentData.carousel} />
         <p style={{ marginTop: '0px' }}>
-          Above is a collection of propositions that a GUM might make about a user based on their computer use. Drag the slider to see propositions update based on various activies during the day.
+          Above is a collection of propositions that a GUM might make about a user based on their computer use. Drag the slider to see propositions update based on various activities during the day.
         </p>
       </div>
     </div>
@@ -213,7 +213,7 @@ if __name__ == "__main__":
           margin: '0',
           fontSize: '15px'
         }}>
-          Any application that might rely on unstructured user context could benefit from a GUM. We create a new class of proactive assistants (GUMBOs) that discover and execute useful suggestions on a user's behalf based on the their GUM. GUMBO discovers helpful suggestions, determines if a suggestion is worth showing to a user and executing, and then executes the (sandboxed) suggestion to the best of its ability---sharing preliminary results with the user.
+          Any application that might rely on unstructured user context could benefit from a GUM. We create a new class of proactive assistants (GUMBOs) that discover and execute useful suggestions on a user's behalf based on their GUM. GUMBO discovers helpful suggestions, determines if a suggestion is worth showing to a user and executing, and then executes the (sandboxed) suggestion to the best of its ability---sharing preliminary results with the user.
         </p>
       </div>
 
@@ -339,7 +339,7 @@ if __name__ == "__main__":
           margin: '0',
           fontSize: '15px'
         }}>
-          For GUMs, privacy guarantees are critical from the start. Our general engineering principle here is to rely primarily on open-source models for our study. While closed-source models are more performant, we expect open-source models to be owned by individual users and eventually distilled to be run on local devices. Our study was deployed and run with open-source models. As gaps between closed and open sourced models close and as models become cheaper for inference, model's will become more performant and feasible on commodity hardware. Our implementation is open-source (available on <a href="https://github.com/generalusermodels/gum" target="_blank" rel="noopener noreferrer" style={{ color: '#ff9d9d' }}>GitHub</a>) and uses the OpenAI Completions API. Open source inference platforms like vLLM support the Completions API, and work with systems like GUM.
+          For GUMs, privacy guarantees are critical from the start. Our general engineering principle here is to rely primarily on open-source models for our study. While closed-source models are more performant, we expect open-source models to be owned by individual users and eventually distilled to be run on local devices. Our study was deployed and run with open-source models. As gaps between closed and open-sourced models close and as models become cheaper for inference, models will become more performant and feasible on commodity hardware. Our implementation is open-source (available on <a href="https://github.com/generalusermodels/gum" target="_blank" rel="noopener noreferrer" style={{ color: '#ff9d9d' }}>GitHub</a>) and uses the OpenAI Completions API. Open-source inference platforms like vLLM support the Completions API, and work with systems like GUM.
         </p>
 
 
@@ -358,7 +358,7 @@ if __name__ == "__main__":
           margin: '0',
           fontSize: '15px'
         }}>
-          In our technical evaluations, we first focus on validating GUM accuracy. We train GUM on recent email interaction, feeding each email---metadata, attachments, links, and replies---sequentially into the GUM. N=18 participants judged propositions generated by GUMs as overall accurate and well-calibrated: unconfident when incorrect, and confident when correct. Highly confident propositions (confidence = 10) were rated 100% accurate, while all propositions on average---including ones with low confidence---were fairly accurate (76.15%). From ablation studies, we show that all GUM components are critical for accuracy. 
+          In our technical evaluations, we first focus on validating GUM accuracy. We train GUM on recent email interactions, feeding each email---metadata, attachments, links, and replies---sequentially into the GUM. N=18 participants judged propositions generated by GUMs as overall accurate and well-calibrated: unconfident when incorrect, and confident when correct. Highly confident propositions (confidence = 10) were rated 100% accurate, while all propositions on average---including ones with low confidence---were fairly accurate (76.15%). From ablation studies, we show that all GUM components are critical for accuracy. 
           
           <div className="graph-figure-container">
             <img 
@@ -398,7 +398,7 @@ if __name__ == "__main__":
       fontSize: '15px',
     }}
   >
-    We built a fully-functional macOS GUMBO client. Below are a couple of
+    We built a fully functional macOS GUMBO client. Below are a couple of
     screenshots that showcase the interface and key features.
   </p>
 
