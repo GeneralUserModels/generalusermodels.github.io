@@ -5,7 +5,7 @@ import Carousel from './Carousel';
 import App from '../App';
 import dynamicData from '../data/dynamicData.json';
 import { DynamicDataProvider } from '../context/DynamicDataContext';
-import { FaFileAlt, FaGithub, FaArrowDown, FaArrowUp } from 'react-icons/fa'; // Added arrow icons
+import { FaFileAlt, FaGithub, FaArrowDown, FaArrowUp, FaBook } from 'react-icons/fa'; // Added FaBook icon
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
@@ -107,6 +107,10 @@ if __name__ == "__main__":
         
         <a href="https://github.com/generalusermodels/gum" target="_blank" rel="noopener noreferrer" className="start-chat-button" style={{ padding: '12px 12px', fontSize: '16px', display: 'flex', alignItems: 'center' }}>
           <FaGithub style={{ marginRight: '0.5rem', fontSize: '18px' }} /> GitHub
+        </a>
+
+        <a href="https://generalusermodels.github.io/gum/" target="_blank" rel="noopener noreferrer" className="start-chat-button" style={{ padding: '12px 12px', fontSize: '16px', display: 'flex', alignItems: 'center' }}>
+          <FaBook style={{ marginRight: '0.5rem', fontSize: '18px' }} /> Docs
         </a>
       </div>
 
