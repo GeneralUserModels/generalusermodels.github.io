@@ -1,8 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders project destination links', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  expect(screen.getByRole('link', { name: /open gum site/i })).toHaveAttribute('href', '/gum/');
+  expect(screen.getByRole('link', { name: /read docs/i })).toHaveAttribute('href', '/gum/docs/');
+  expect(screen.getByRole('link', { name: /open tada site/i })).toHaveAttribute('href', '/tada/');
 });

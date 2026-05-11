@@ -1,46 +1,57 @@
-import React from 'react';
-import AppContent from './AppContent';
-import Carousel from './components/Carousel';
+const destinations = [
+  {
+    name: 'GUM',
+    eyebrow: 'General User Models',
+    description:
+      'Research, demos, and API docs for models that learn user context from computer use.',
+    primaryHref: '/gum/',
+    primaryLabel: 'Open GUM site',
+    secondaryHref: '/gum/docs/',
+    secondaryLabel: 'Read docs',
+  },
+  {
+    name: 'TADA',
+    eyebrow: 'Task-aware desktop assistant',
+    description:
+      'A desktop assistant that predicts and prepares what you will need next.',
+    primaryHref: '/tada/',
+    primaryLabel: 'Open TADA site',
+    secondaryHref: 'https://github.com/GeneralUserModels/tada',
+    secondaryLabel: 'GitHub',
+  },
+];
 
-const App = ({ carouselData, suggestionsData }) => {
+function App() {
   return (
-    <div style={{ height: '80vh', overflowY: 'auto', backgroundColor: 'var(--color-main-bg)' }}>
-      {/* Carousel Section */}
-      <div
-        style={{
-          margin: '0',
-          height: '250px',
-          borderRadius: '8px',
-          overflow: 'hidden',
-          paddingBottom: '0'
-        }}
-      >
-        <Carousel carouselData={carouselData} />
-      </div>
-      {/* App Section */}
-      <div
-        style={{
-          margin: '10px',
-          padding: '10px',
-          paddingTop: '0',
-          marginTop: '0'
-        }}
-      >
-        <h2 className="appTitle" style={{ color: 'var(--color-main-text)' }}>
-          Horizon App
-        </h2>
-        <div
-          style={{
-            border: '1px solid rgba(204, 204, 204, 0.5)',
-            borderRadius: '8px',
-            height: '80vh'
-          }}
-        >
-          <AppContent suggestionsData={suggestionsData} />
-        </div>
-      </div>
-    </div>
+    <main className="site-shell">
+      <section className="intro" aria-labelledby="page-title">
+        <p className="kicker">General User Models</p>
+        <h1 id="page-title">Choose a project</h1>
+        <p className="lede">
+          GUM is the research and developer platform for user models. TADA is
+          the assistant experience built from that line of work.
+        </p>
+      </section>
+
+      <section className="destination-grid" aria-label="Project destinations">
+        {destinations.map((destination) => (
+          <article className="destination-card" key={destination.name}>
+            <p className="card-eyebrow">{destination.eyebrow}</p>
+            <h2>{destination.name}</h2>
+            <p>{destination.description}</p>
+            <div className="card-actions">
+              <a className="button button-primary" href={destination.primaryHref}>
+                {destination.primaryLabel}
+              </a>
+              <a className="button button-secondary" href={destination.secondaryHref}>
+                {destination.secondaryLabel}
+              </a>
+            </div>
+          </article>
+        ))}
+      </section>
+    </main>
   );
-};
+}
 
 export default App;
