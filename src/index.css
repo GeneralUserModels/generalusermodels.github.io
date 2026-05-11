@@ -1,17 +1,25 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 :root {
-  color-scheme: dark;
-  --bg: #121212;
-  --panel: #1d1d1d;
-  --panel-strong: #252525;
-  --text: #f2eadb;
-  --muted: #b9b0a1;
-  --line: rgba(242, 234, 219, 0.18);
-  --accent: #b73a62;
-  --accent-strong: #d8587e;
+  --sage: #84b179;
+  --fern: #a2cb8b;
+  --mint: #c7eabb;
+  --cream: #e8f5bd;
+  --sage-rgb: 132, 177, 121;
+  --bg: #f4f2ee;
+  --bg-warm: #ebe8e2;
+  --glass: rgba(255, 255, 255, 0.64);
+  --glass-hover: rgba(255, 255, 255, 0.82);
+  --glass-border: rgba(var(--sage-rgb), 0.18);
+  --glass-shadow: rgba(var(--sage-rgb), 0.09);
+  --text: #2c3a28;
+  --text-secondary: #6b7a65;
+  --text-tertiary: #9ba896;
+  --active-green: #5da34e;
 }
 
 html,
@@ -22,36 +30,60 @@ body,
 }
 
 body {
-  background: linear-gradient(135deg, #121212 0%, #202020 100%);
+  background:
+    linear-gradient(180deg, rgba(232, 245, 189, 0.42), transparent 280px),
+    var(--bg);
   color: var(--text);
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, system-ui, "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
   color: inherit;
 }
 
+.page {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.grain {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  pointer-events: none;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 200px;
+}
+
 .site-shell {
-  width: min(1120px, calc(100% - 40px));
+  width: min(980px, calc(100% - 48px));
   min-height: 100vh;
   margin: 0 auto;
-  padding: 72px 0;
+  padding: 84px 0 72px;
   display: grid;
   align-content: center;
-  gap: 40px;
+  gap: 28px;
+  position: relative;
+  z-index: 1;
 }
 
 .intro {
-  max-width: 760px;
+  max-width: 720px;
 }
 
 .kicker,
 .card-eyebrow {
   margin: 0;
-  color: var(--accent-strong);
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  color: var(--sage);
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 0;
+  line-height: 1;
   text-transform: uppercase;
 }
 
@@ -62,67 +94,83 @@ p {
 }
 
 h1 {
+  max-width: 720px;
   margin-bottom: 16px;
-  font-size: 5.75rem;
-  line-height: 0.95;
+  color: var(--text);
+  font-size: 58px;
+  font-weight: 735;
   letter-spacing: 0;
+  line-height: 1.02;
 }
 
 .lede {
-  max-width: 680px;
+  max-width: 610px;
   margin-bottom: 0;
-  color: var(--muted);
-  font-size: 1.2rem;
-  line-height: 1.55;
+  color: var(--text-secondary);
+  font-size: 17px;
+  line-height: 1.58;
 }
 
 .destination-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px;
+  gap: 16px;
 }
 
 .destination-card {
-  min-height: 300px;
-  padding: 28px;
-  border: 1px solid var(--line);
+  min-height: 260px;
+  padding: 22px;
+  border: 1px solid var(--glass-border);
   border-radius: 8px;
-  background: linear-gradient(180deg, rgba(37, 37, 37, 0.94), rgba(29, 29, 29, 0.94));
+  background: var(--glass);
+  box-shadow: 0 20px 48px var(--glass-shadow);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: transform 0.18s, background 0.18s, border-color 0.18s;
+}
+
+.destination-card:hover {
+  transform: translateY(-2px);
+  background: var(--glass-hover);
+  border-color: rgba(var(--sage-rgb), 0.3);
 }
 
 .destination-card h2 {
-  margin: 18px 0 14px;
-  font-size: 3.6rem;
-  line-height: 0.96;
+  margin: 14px 0 12px;
+  color: var(--text);
+  font-size: 42px;
+  font-weight: 735;
   letter-spacing: 0;
+  line-height: 1.04;
 }
 
 .destination-card p:not(.card-eyebrow) {
-  color: var(--muted);
-  font-size: 1rem;
+  max-width: 360px;
+  color: var(--text-secondary);
+  font-size: 14px;
   line-height: 1.55;
 }
 
 .card-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 9px;
   margin-top: 28px;
 }
 
 .button {
-  min-height: 44px;
-  padding: 11px 16px;
-  border-radius: 6px;
+  min-height: 38px;
+  padding: 10px 13px;
+  border-radius: 8px;
   text-decoration: none;
-  font-weight: 700;
+  font-size: 12px;
+  font-weight: 720;
+  line-height: 1;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+  transition: transform 0.15s, background 0.15s, border-color 0.15s;
 }
 
 .button:hover {
@@ -130,24 +178,36 @@ h1 {
 }
 
 .button-primary {
-  background: var(--accent);
-  color: #fff8f8;
+  background: var(--active-green);
+  color: #fff;
+  border: 1px solid rgba(var(--sage-rgb), 0.08);
 }
 
 .button-secondary {
-  border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(var(--sage-rgb), 0.18);
+  background: rgba(255, 255, 255, 0.55);
+  color: var(--text-secondary);
 }
 
 .button-secondary:hover {
-  border-color: rgba(242, 234, 219, 0.42);
+  background: rgba(255, 255, 255, 0.78);
+  border-color: rgba(var(--sage-rgb), 0.3);
+  color: var(--text);
 }
 
 @media (max-width: 760px) {
   .site-shell {
-    width: min(100% - 28px, 520px);
-    padding: 36px 0;
-    gap: 28px;
+    width: min(100% - 32px, 520px);
+    padding: 48px 0;
+    gap: 22px;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  .lede {
+    font-size: 15px;
   }
 
   .destination-grid {
@@ -155,23 +215,10 @@ h1 {
   }
 
   .destination-card {
-    min-height: 260px;
-    padding: 22px;
-  }
-
-  h1 {
-    font-size: 3.2rem;
+    min-height: 236px;
   }
 
   .destination-card h2 {
-    font-size: 2.6rem;
-  }
-
-  .card-actions {
-    flex-direction: column;
-  }
-
-  .button {
-    width: 100%;
+    font-size: 34px;
   }
 }

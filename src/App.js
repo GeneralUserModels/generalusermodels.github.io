@@ -3,19 +3,19 @@ const destinations = [
     name: 'GUM',
     eyebrow: 'General User Models',
     description:
-      'Research, demos, and API docs for models that learn user context from computer use.',
+      'The research, demos, and developer docs for models that learn user context from computer use.',
     primaryHref: '/gum/',
-    primaryLabel: 'Open GUM site',
+    primaryLabel: 'Explore GUM',
     secondaryHref: '/gum/docs/',
-    secondaryLabel: 'Read docs',
+    secondaryLabel: 'Docs',
   },
   {
     name: 'TADA',
-    eyebrow: 'Task-aware desktop assistant',
+    eyebrow: 'Desktop assistant',
     description:
-      'A desktop assistant that predicts and prepares what you will need next.',
+      'A softer assistant experience that predicts, prepares, and keeps useful context close by.',
     primaryHref: '/tada/',
-    primaryLabel: 'Open TADA site',
+    primaryLabel: 'Visit TADA',
     secondaryHref: 'https://github.com/GeneralUserModels/tada',
     secondaryLabel: 'GitHub',
   },
@@ -23,32 +23,37 @@ const destinations = [
 
 function App() {
   return (
-    <main className="site-shell">
-      <section className="intro" aria-labelledby="page-title">
-        <p className="kicker">General User Models</p>
-        <h1 id="page-title">Choose a project</h1>
-        <p className="lede">
-          GUM is the research and developer platform for user models. TADA is
-          the assistant experience built from that line of work.
-        </p>
-      </section>
+    <main className="page">
+      <div className="grain" aria-hidden="true" />
+      <section className="site-shell" aria-labelledby="page-title">
+        <div className="intro">
+          <p className="kicker">General User Models</p>
+          <h1 id="page-title">User models that feel more personal.</h1>
+          <p className="lede">
+            Start with the GUM research platform, or see how the same ideas
+            show up in TADA as a desktop assistant.
+          </p>
+        </div>
 
-      <section className="destination-grid" aria-label="Project destinations">
-        {destinations.map((destination) => (
-          <article className="destination-card" key={destination.name}>
-            <p className="card-eyebrow">{destination.eyebrow}</p>
-            <h2>{destination.name}</h2>
-            <p>{destination.description}</p>
-            <div className="card-actions">
-              <a className="button button-primary" href={destination.primaryHref}>
-                {destination.primaryLabel}
-              </a>
-              <a className="button button-secondary" href={destination.secondaryHref}>
-                {destination.secondaryLabel}
-              </a>
-            </div>
-          </article>
-        ))}
+        <section className="destination-grid" aria-label="Project destinations">
+          {destinations.map((destination) => (
+            <article className="destination-card" key={destination.name}>
+              <div>
+                <p className="card-eyebrow">{destination.eyebrow}</p>
+                <h2>{destination.name}</h2>
+                <p>{destination.description}</p>
+              </div>
+              <div className="card-actions">
+                <a className="button button-primary" href={destination.primaryHref}>
+                  {destination.primaryLabel}
+                </a>
+                <a className="button button-secondary" href={destination.secondaryHref}>
+                  {destination.secondaryLabel}
+                </a>
+              </div>
+            </article>
+          ))}
+        </section>
       </section>
     </main>
   );
