@@ -61,13 +61,13 @@ a {
 }
 
 .site-shell {
-  width: min(980px, calc(100% - 48px));
+  width: min(860px, calc(100% - 128px));
   min-height: 100vh;
   margin: 0 auto;
-  padding: 84px 0 72px;
+  padding: 72px 0 68px;
   display: grid;
-  align-content: center;
-  gap: 28px;
+  align-content: start;
+  gap: 24px;
   position: relative;
   z-index: 1;
 }
@@ -76,8 +76,7 @@ a {
   max-width: 720px;
 }
 
-.kicker,
-.card-eyebrow {
+.kicker {
   margin: 0;
   color: var(--sage);
   font-size: 11px;
@@ -89,41 +88,61 @@ a {
 
 h1,
 h2,
+h3,
 p {
   margin-top: 0;
 }
 
 h1 {
   max-width: 720px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   color: var(--text);
-  font-size: 58px;
-  font-weight: 735;
+  font-size: 36px;
+  font-weight: 650;
   letter-spacing: 0;
-  line-height: 1.02;
+  line-height: 1.08;
 }
 
 .lede {
   max-width: 610px;
   margin-bottom: 0;
   color: var(--text-secondary);
-  font-size: 17px;
+  font-size: 15px;
   line-height: 1.58;
+}
+
+.project-sections {
+  display: grid;
+  gap: 28px;
+}
+
+.project-section {
+  display: grid;
+  gap: 12px;
+}
+
+.section-title {
+  margin: 0;
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 650;
+  letter-spacing: 0;
+  line-height: 1.2;
 }
 
 .destination-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
+  gap: 14px;
 }
 
 .destination-card {
-  min-height: 260px;
-  padding: 22px;
+  min-height: 190px;
+  padding: 18px;
   border: 1px solid var(--glass-border);
   border-radius: 8px;
   background: var(--glass);
-  box-shadow: 0 20px 48px var(--glass-shadow);
+  box-shadow: 0 2px 10px var(--glass-shadow);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -136,27 +155,38 @@ h1 {
   border-color: rgba(var(--sage-rgb), 0.3);
 }
 
-.destination-card h2 {
-  margin: 14px 0 12px;
+.destination-card h3 {
+  margin: 0 0 8px;
   color: var(--text);
-  font-size: 42px;
-  font-weight: 735;
+  font-size: 24px;
+  font-weight: 650;
   letter-spacing: 0;
-  line-height: 1.04;
+  line-height: 1.12;
 }
 
-.destination-card p:not(.card-eyebrow) {
-  max-width: 360px;
+.destination-card p {
+  margin-bottom: 6px;
   color: var(--text-secondary);
   font-size: 14px;
-  line-height: 1.55;
+  line-height: 1.48;
+}
+
+.destination-card .card-meta,
+.destination-card .card-note {
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 620;
+}
+
+.destination-card .card-note {
+  color: var(--active-green);
 }
 
 .card-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 9px;
-  margin-top: 28px;
+  margin-top: 22px;
 }
 
 .button {
@@ -178,9 +208,9 @@ h1 {
 }
 
 .button-primary {
-  background: var(--active-green);
-  color: #fff;
-  border: 1px solid rgba(var(--sage-rgb), 0.08);
+  border: 1px solid rgba(var(--sage-rgb), 0.26);
+  background: rgba(255, 255, 255, 0.55);
+  color: var(--active-green);
 }
 
 .button-secondary {
@@ -195,15 +225,16 @@ h1 {
   color: var(--text);
 }
 
-@media (max-width: 760px) {
+@media (max-width: 620px) {
   .site-shell {
-    width: min(100% - 32px, 520px);
+    width: calc(100% - 32px);
+    max-width: 520px;
     padding: 48px 0;
     gap: 22px;
   }
 
   h1 {
-    font-size: 42px;
+    font-size: 34px;
   }
 
   .lede {
@@ -215,10 +246,10 @@ h1 {
   }
 
   .destination-card {
-    min-height: 236px;
+    min-height: 210px;
   }
 
-  .destination-card h2 {
-    font-size: 34px;
+  .destination-card h3 {
+    font-size: 26px;
   }
 }
